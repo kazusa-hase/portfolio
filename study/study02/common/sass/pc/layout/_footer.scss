@@ -1,0 +1,55 @@
+
+.footer {
+
+  padding: 20px 0 30px;
+
+  .scr-btn {
+
+    $s: 30px;
+    width: $s;
+    height: $s;
+    margin-left: auto;
+
+    &>a {
+
+      position: relative;
+      display: block;
+      width: $s;
+      height: $s;
+      background: #ffcbc7;
+      text-align: center;
+      cursor: pointer;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      transition: .3s opacity;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 14px;
+        left: 0;
+        display: block;
+        margin: auto auto;
+        width: 14px;
+        height: 24px;
+        border: {
+          top: 12px solid transparent;
+          right: 7px solid transparent;
+          bottom: 12px solid #fff;
+          left: 7px solid transparent;
+        }
+        box-sizing: border-box;
+        content: "";
+      }
+
+      &:hover {
+        opacity: .7;
+      }
+
+    }
+
+  }
+
+}

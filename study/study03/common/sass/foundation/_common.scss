@@ -1,0 +1,11 @@
+
+.container {
+
+  width: 710px;
+  margin: auto;
+
+  @include media-sp() {
+    width: 100%;
+  }
+
+}

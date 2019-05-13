@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>パイオニアモール開発</title>
+	<meta content="世界のショッピングモールを通じて、人と地域を結ぶお手伝いをしています。" name="description">
+	<meta content="width=device-width" name="viewport">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body id="home">
+	
+	<header class="header">
+		<div class="headerInner container">
+			<h1 class="h1">パイオニアモール開発</h1>
+			<p class="catch">世界のショッピングモールを通じて<br>
+			人と地域を結ぶお手伝いをしています。</p>
+		</div>
+		<!-- /.headerInner container -->
+		<div id="menuBtn">
+			<i class="fa fa-angle-double-down" aria-hidden="true"></i>
+		</div>
+		<!-- /#menuBtn -->
+		<nav class="gnav">
+			<ul class="headerNav container" id="nav">
+				<li class="link"><a href="index.html">ホーム</a></li>
+				<li class="link"><a href="#">会社概要</a></li>
+				<li class="link"><a href="#">開発環境</a></li>
+				<li class="link"><a href="#">開発実績</a></li>
+				<li class="link"><a href="#">お問合せ</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main class="main">
+	
+		<div class="keyVisual-box">
+			<p class="catch catch01">Pioneer MALL DEVELOPMENT</p>
+			<p class="catch catch02">We serve peaple and community<br>
+			throught shopping mall.</p>
+		</div>
+		<!-- /.keyVisual -->
+		
+		<div class="imgGallery-box container">
+			<ul class="imgGallery">
+			
+				<li class="ls ls01">
+					<a href="shiodome.html">
+						<h2 class="h2">汐留モール</h2>
+						<img src="img/thumbnail01.jpg" alt="汐留モールの画像" class="thumbnail">
+						<p class="caption">「東洋のマンハッタン」といわれる東京汐留。汐留シオサイト内に位置し浜離宮恩賜庭園に隣接する交通至便の …</p>
+					</a>
+				</li>
+				
+				<li class="ls ls02">
+					<a href="durian.html">
+						<h2 class="h2">ドリアンモール</h2>
+						<img src="img/thumbnail02.jpg" alt="ドリアンモールの画像" class="thumbnail">
+						<p class="caption">シンガポールの中心街・オーチャードロードに古くからある小規模店舗群を時代の変化に合わせて整備・活性化 …</p>
+					</a>
+				</li>
+				
+				<li class="ls ls03">
+					<a href="thamrin.html">
+						<h2 class="h2">タムリンモール</h2>
+						<img src="img/thumbnail03.jpg" alt="タムリンモールの画像" class="thumbnail">
+						<p class="caption">ジャカルタ中心部、BANK INDONESIA（インドネシア銀行）や日本大使館が建ち並ぶジャランタム …</p>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+		<!-- /.imgGallery-box .container-->
+		
+	</main>
+	
+	<div id="scrollBtn">
+		<i class="fas fa-chevron-up"></i><span>Top</span>
+	</div>
+	<!-- /#scrollBtn -->
+		
+	<footer class="footer">
+		<div class="footerInner container">
+			<p class="catchcopy"><small>Copyrightコピーライト2016 パイオニアモール開発株式会社 All rights reserved.</small></p>
+		</div>
+		<!-- /.footerInner container -->
+	</footer>
+		
+	
+<!--  library_src -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	
+<!--	script -->
+	<script>
+		$(function() {
+			// menuの表示・非表示
+			$('#menuBtn').on('touchend', function() {
+				$('#nav').slideToggle(400);
+			});
+			
+			/* scroll button
+			---------------------------*/ 
+			var scrollBtn = $('#scrollBtn');
+			
+			// 表示・非表示
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 300) {
+					scrollBtn.fadeIn();
+				} else {
+					scrollBtn.fadeOut();
+				}
+			});
+			
+			// scroll animation
+			$(scrollBtn).on('touchend', function() {
+				$('html, body').animate({
+					scrollTop: 0
+				}, 500);
+			});
+			
+		});
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

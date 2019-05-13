@@ -1,0 +1,37 @@
+
+.appeal-box {
+      
+  display: flex;
+  margin-bottom: vws(24);
+  background: #ff7d73;
+  
+  $dt-width: vws(140);
+
+  &>dt {
+    display: inline-flex;
+    align-items: center;
+    width: $dt-width;
+    padding: 0 vws(8) 0 vws(20);
+    box-sizing: border-box;
+    color: #fff;
+    font-size: vws(28);
+  }
+  
+  &>dd {
+    
+    width: calc(100% - #{$dt-width});
+    padding: vws(16) vws(15) vws(14) vws(15);
+    box-sizing: border-box;
+    background-color: #fff0b9;
+    color: #ff7d73;
+    font-size: vws(32);
+    letter-spacing: -0.0135em;
+
+    &>span {
+      display: block;
+      margin-top: vws(6);
+    }
+    
+  }
+
+}

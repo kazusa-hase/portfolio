@@ -1,0 +1,488 @@
+@charset "utf-8";
+
+/* reset
+=====================================*/
+html, body, h1, h2, h3, p, ul, li, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+  line-height: 1.0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+/* base
+=====================================*/
+body {
+  overflow: scroll;
+  color: #333;
+  background: #fff;
+  font-family:
+    -apple-system,
+    BlinkMacFontSystem,
+    "Hiragino Kaku Gothic ProN",
+    Meiryo,
+    sans-serif;
+  font-weight: 500;
+}
+
+/* layout
+=====================================*/
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* media query -layout */
+@media screen and (max-width: 767px) {
+  .container {
+    
+  }
+}
+
+
+/* header
+=====================================*/
+
+.header {
+  padding: 10px 0;
+  background: #013354;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.title-wrapper__h1 {
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.title-wrapper__h1>span {
+  margin-right: 2px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.title-wrapper__catch {
+  color: #fff;
+  font-size: 14px;
+}
+
+/* media query -header */
+@media screen and (max-width: 767px) {
+  .header {
+    height: auto;
+    padding: 20px 0;
+  }
+  .title-wrapper__h1 {
+    margin-bottom: 0;
+  }
+  .title-wrapper__catch {
+    display: none;
+  }
+}
+
+/* navigation
+-------------------------------------*/
+
+.gnav-list {
+  display: flex;
+}
+
+.gnav-list__item {
+  padding: 0 10px;
+  border-right: 1px solid #999;
+  color: #fff;
+}
+
+.gnav-list__item:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+
+.gnav-list__item>a {
+  display: block;
+  transition: 0.3s;
+}
+.gnav-list__item>a:hover {
+  color: #ddd;
+}
+
+/* media query -gnav */
+@media screen and (max-width: 767px) {
+  .gnav {
+    overflow: hidden;
+  }
+  .gnav-list {
+    display: block;
+    position: fixed;
+    top: 72px;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    margin-left: 100%;
+    transition: 0.3s;
+    background: rgba(254, 101, 0, 0.8);
+  }
+  .gnav-list__item {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: calc((100vh - 72px) / 5);
+  }
+  .gnav-list__item:last-child {
+    border: 0;
+  }
+  
+  .slide-in {
+    margin-left: 0;
+  }
+  
+}
+
+/* menu button
+-------------------------------------*/
+
+#menuBtn {
+	display: none;
+	position: absolute;
+	top: 10px;
+	right: 5px;
+	width: 50px;
+	height: 50px;
+  border-radius: 10px;
+	background: #fe6500;
+}
+#menuBtn>span {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: 56%;
+	height: 3px;
+	border-radius: 5px;
+	background: #fff;
+}
+#menuBtn>span::before, #menuBtn>span::after {
+	display: block;
+	content: "";
+	width: 100%;
+	height: 3px;
+	border-radius: 5px;
+	background: #fff;
+}
+#menuBtn>span::before {
+	margin-top: -10px;
+}
+#menuBtn>span::after {
+	margin-top: 17.6px;
+}
+
+/* media query -menu-button */
+@media screen and (max-width: 767px) {
+  #menuBtn {
+    display: block;
+  }
+}
+
+/* main
+=====================================*/
+
+/* 共通クラス
+-------------------------------------*/
+
+.main h2 {
+  width: 320px;
+  margin: 0 auto 50px;
+  padding: 6px 0 4px;
+  background: #ddd;
+  color: #555;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 8px;
+}
+
+/* key-visual
+-------------------------------------*/
+
+.key-visual {
+  margin-bottom: 100px;
+  padding: 100px 0;
+  background:
+    url(../img/buiding.jpg) no-repeat center top / cover;
+}
+
+.key-visual__heading {
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.key-visual__sub-heading {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  text-shadow: 1px 1px 5px #000;
+}
+
+/* サービス紹介覧
+-------------------------------------*/
+
+.service-list-inner-wrapper {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.service-list-item {
+  width: 33.3%;
+}
+
+.service-list-item>h3>a {
+  display: block;
+  width: 225px;
+  height: 225px;
+  margin: 0 auto 30px;
+  border-radius: 50%;
+  text-align: center;
+  transition: 0.3s;
+}
+.service-list-item>h3>a:hover {
+  opacity: 0.5;
+}
+
+.service-list-item>h3>a>.fas {
+  display: block;
+  margin-bottom: 8px;
+  padding-top: 33%;
+  font-size: 48px;
+}
+
+.service-list-item>p {
+  width: 225px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* ビル建設 */
+
+.construction__h3>a {
+  background: #dbfcdf;
+  color: #53be94;
+}
+
+/* 道路整備 */
+
+.road-maintenance__h3>a {
+  background: #dee6fd;
+  color: #4e56ff;
+}
+
+/* 安全第一 */
+
+.safety-policy__h3>a {
+  background: #fae4bd;
+  color: #fa9400;
+}
+
+/* media query -service-list */
+@media screen and (max-width: 767px) {
+  .service-list-inner-wrapper {
+    display: none;
+    margin-bottom: 100px;
+  }
+  .service-list-item {
+    width: 33.3%;
+  }
+  
+}
+
+/* 会社紹介覧
+-------------------------------------*/
+
+.company-info-out-wrapper {
+  margin-bottom: 100px;
+  padding: 100px 10px;
+  background: #eee;
+}
+
+.company-info>.company-info__h2 {
+  background: #fff;
+  color: #777;
+}
+
+.company-info-inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.company-info-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+}
+
+.info-list__dt {
+  width: 20%;
+  padding: 5px 0;
+}
+.info-list__dt>.fa-square {
+  margin-right: 5px;
+  color: #fe6501;
+  font-size: 1rem;
+}
+
+.info-list__dd {
+  width: 80%;
+  padding: 5px 0;
+}
+
+.company-img {
+  width: 300px;
+  padding: 5px;
+  box-shadow: 0 0 3px;
+  background: #fff;
+}
+
+/* アクセス
+-------------------------------------*/
+
+.map-outer-wrapper {
+  position: relative;
+  padding-top: 40%;
+  height: 0;
+  overflow: hidden;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* scroll button
+=====================================*/
+
+.scrollBtn {
+  display: none;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #fe5801;
+	color: #fff;
+	opacity: 0.8;
+	text-align: center;
+	line-height: 55px;
+	box-shadow: 0 0 4px #fff;
+}
+
+/* media query -scroll button */
+@media screen and (max-width: 767px) {
+	.scrollBtn {
+		
+	}
+}
+
+/* footer
+=====================================*/
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 160px;
+  background: 
+    url(../img/footerBg.jpg)
+    no-repeat
+    center bottom 30px
+    / 100% auto;
+}
+
+.copywrite {
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+
+.footer {
+
+  display: flex;
+  justify-content: flex-end;
+  padding-right: vws(20);
+  padding-bottom: vws(10);
+  box-sizing: border-box;
+    
+  .scr-btn > a {
+
+    $btn-size: vws(60);
+    
+    position: relative;
+    display: block;
+    width: $btn-size;
+    height: $btn-size;
+    background: #ffcbc7;
+    text-align: center;
+    cursor: pointer;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    &::after {
+
+      position: absolute;
+      right: 0;
+      bottom: vws(22);
+      left: 0;
+      display: block;
+      margin: auto auto;
+      width: vws(28);
+      height: vws(50);
+
+      $border-size-vertical: vws(25);
+      $border-size-horizontal: vws(14);
+
+      border: {
+        top:    $border-size-vertical   solid transparent;
+        right:  $border-size-horizontal solid transparent;
+        bottom: $border-size-vertical   solid #fff;
+        left:   $border-size-horizontal solid transparent;
+      }
+
+      box-sizing: border-box;
+      content: "";
+
+    }
+
+
+  }
+  
+
+}

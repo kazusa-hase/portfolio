@@ -1,0 +1,31 @@
+
+.points-list {
+
+  .point {
+
+    position: relative;
+    padding-left: vws(22);
+    font-size: vws(22);
+    line-height: 1.4;
+
+    &::before {
+
+      position: absolute;
+      top: vws(6);
+      left: 0;
+      display: block;
+      width: vws(16);
+      height: vws(16);
+      border-radius: 50%;
+      content: "";
+      background: #ff6872;
+
+    }
+
+    &:not(:last-child) {
+      margin-bottom: vws(16);
+    }
+
+  }
+
+}

@@ -1,0 +1,522 @@
+@charset "UTF-8";
+html, body, h1, h2, h3, p, ul, li, dl, dt, dd, table, tr, th, td {
+  line-height: 1.0;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  border: none;
+  vertical-align: bottom;
+  width: 100%;
+}
+
+.body {
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", Meiryo, 'メイリオ', sans-serif;
+}
+
+.header {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: auto;
+  width: 710px;
+}
+
+.header .header-nav-list {
+  -ms-flex-flow: row nowrap;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 5px 0 12px;
+}
+
+.header .header-nav-list .header-nav-list-item {
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -webkit-box-sizing: border-box;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(36%, #dc442d), color-stop(79%, #e76620), to(#ffb400));
+  background-image: -webkit-linear-gradient(bottom, #dc442d 36%, #e76620 79%, #ffb400);
+  background-image: linear-gradient(to top, #dc442d 36%, #e76620 79%, #ffb400);
+  border: solid 1px #f98d6b;
+  box-sizing: border-box;
+  flex-grow: 1;
+  height: 48px;
+  position: relative;
+  text-align: center;
+}
+
+.header .header-nav-list .header-nav-list-item:not(:first-child)::before {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#8c0707), to(#ffe4da));
+  background-image: -webkit-linear-gradient(bottom, #8c0707, #ffe4da);
+  background-image: linear-gradient(to top, #8c0707, #ffe4da);
+  content: '';
+  display: block;
+  height: 100%;
+  left: -1px;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.header .header-nav-list .header-nav-list-item > a {
+  -webkit-box-sizing: border-box;
+  -webkit-transition: opacity .3s;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  height: 100%;
+  letter-spacing: 0.07222em;
+  line-height: 2;
+  padding-bottom: 14px;
+  text-shadow: 0.5px 0.9px 1px rgba(0, 0, 0, 0.75);
+  transition: opacity .3s;
+}
+
+.header .header-nav-list .header-nav-list-item > a::before {
+  background: url(/portfolio/study/study04/common/img/nav-item-pc-arrow.png) no-repeat left top 20px;
+  content: '';
+  display: inline-block;
+  height: 100%;
+  margin-right: 7px;
+  width: 15px;
+}
+
+.header .header-nav-list .header-nav-list-item > a:hover {
+  opacity: .8;
+}
+
+.main {
+  -webkit-box-sizing: border-box;
+  background: url(/portfolio/study/study04/common/img/bg-img.jpg) repeat left top;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 15px 10px 40px;
+  width: 710px;
+}
+
+.main .main-section {
+  -webkit-box-sizing: border-box;
+  background: #fff0ed url(/portfolio/study/study04/common/img/bg-pc-momiji.jpg) no-repeat right top/100% auto;
+  border: solid 1px #e9c0b8;
+  box-sizing: border-box;
+  padding: 70px 10px 10px;
+  position: relative;
+}
+
+.main .main-section + section {
+  margin-top: 60px;
+}
+
+.main .main-section .main-section-title {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -webkit-box-shadow: 1.3px 1.5px 4px 0 rgba(0, 0, 0, 0.35);
+  -webkit-box-sizing: border-box;
+  align-items: center;
+  background-color: #df3008;
+  border: solid 4px #921b00;
+  border-radius: 10px;
+  box-shadow: 1.3px 1.5px 4px 0 rgba(0, 0, 0, 0.35);
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 59px;
+  left: 10px;
+  padding-left: 23px;
+  position: absolute;
+  top: -4px;
+  width: 280px;
+}
+
+.main .main-section .main-section-title > img {
+  height: auto;
+  width: 198px;
+}
+
+.main .main-section .to-top-link {
+  bottom: -29px;
+  position: absolute;
+  right: 0;
+}
+
+.main .main-section .to-top-link > a {
+  -webkit-transition: opacity .3s;
+  color: #009;
+  font-size: 12px;
+  text-decoration: underline;
+  transition: opacity .3s;
+}
+
+.main .main-section .to-top-link > a::before {
+  -webkit-transform: scale(0.8);
+  content: '▲';
+  display: inline-block;
+  font-size: 10px;
+  margin-right: 2px;
+  transform: scale(0.8);
+}
+
+.main .main-section .to-top-link > a:hover {
+  opacity: .6;
+}
+
+.main .momiji-map .main-section-body {
+  padding: 0 5px 5px;
+}
+
+.main .momiji-map .momiji-map-caption {
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 5px;
+}
+
+.main .momiji-map .momiji-map-lead {
+  margin-bottom: 5px;
+}
+
+.main .momiji-map .momiji-map-lead img {
+  height: 28px;
+  width: auto;
+}
+
+.main .congestion-calendar .congestion-calendar-caption {
+  font-size: 11px;
+  line-height: 1.42;
+  position: absolute;
+  right: 28px;
+  top: 17px;
+  width: 360px;
+}
+
+.main .congestion-calendar .congestion-calendar-caption::before {
+  content: '\00203B';
+}
+
+.main .congestion-calendar .congestion-calendar-table {
+  background-color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+.main .congestion-calendar .congestion-calendar-table tr:nth-child(odd) {
+  background-color: #f6ece6;
+}
+
+.main .congestion-calendar .congestion-calendar-table th, .main .congestion-calendar .congestion-calendar-table td {
+  border: 1px #610700 solid;
+}
+
+.main .congestion-calendar .congestion-calendar-table .store-name-heading, .main .congestion-calendar .congestion-calendar-table .congestion-heading {
+  background-color: #ffb400;
+}
+
+.main .congestion-calendar .congestion-calendar-table .store-name-heading img {
+  height: auto;
+  width: 138px;
+}
+
+.main .congestion-calendar .congestion-calendar-table .congestion-heading {
+  padding: 8px 0 7px;
+}
+
+.main .congestion-calendar .congestion-calendar-table .congestion-heading > img {
+  height: 15px;
+  width: auto;
+}
+
+.main .congestion-calendar .congestion-calendar-table .month-heading {
+  font-size: 14px;
+  font-weight: normal;
+  padding: 6px 0 5px;
+}
+
+.main .congestion-calendar .congestion-calendar-table .store-name {
+  font-size: 14px;
+  padding: 6px 0 6px;
+}
+
+.main .congestion-calendar .congestion-calendar-table td {
+  padding: 2px 0 3px;
+}
+
+.main .congestion-calendar .congestion-calendar-table td > img {
+  height: 20px;
+  width: auto;
+}
+
+.main .travel-course .travel-course-list {
+  -webkit-box-sizing: border-box;
+  background-color: #fff;
+  border: solid 2px #df3008;
+  box-sizing: border-box;
+  padding: 8px 8px 10px;
+}
+
+.main .travel-course .travel-course-list .travel-course-list-item {
+  -ms-flex-align: center;
+  -ms-flex-flow: row wrap;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+}
+
+.main .travel-course .travel-course-list .travel-course-list-item + li {
+  margin-top: 22px;
+}
+
+.main .travel-course .travel-course-list .travel-course-list-item .course-num-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  margin-right: 10px;
+}
+
+.main .travel-course .travel-course-list .travel-course-list-item .course-num-list > dt {
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  align-items: center;
+  background-color: #ad2b00;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  width: 80px;
+}
+
+.main .travel-course .travel-course-list .travel-course-list-item .course-num-list > dd {
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-box-sizing: border-box;
+  align-items: center;
+  background-color: #fff;
+  border: solid 1px #ad2b00;
+  box-sizing: border-box;
+  color: #ad2b00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  width: 60px;
+}
+
+.main .travel-course .travel-course-list .travel-course-list-item > p:first-of-type > a {
+  -webkit-text-decoration-color: transparent;
+  -webkit-transition: color .3s, -webkit-text-decoration-color .3s;
+  color: #734300;
+  font-size: 16px;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: color .3s, -webkit-text-decoration-color .3s;
+  transition: color .3s, text-decoration-color .3s;
+  transition: color .3s, text-decoration-color .3s, -webkit-text-decoration-color .3s;
+}
+
+.main .travel-course .travel-course-list .travel-course-list-item > p:first-of-type > a:hover {
+  -webkit-text-decoration-color: #bf1d2a;
+  color: #bf1d2a;
+  text-decoration-color: #bf1d2a;
+}
+
+.main .travel-course .travel-course-list .travel-course-list-item > p:nth-of-type(2n) {
+  -webkit-box-sizing: border-box;
+  -webkit-transition: color .3s;
+  box-sizing: border-box;
+  color: #734300;
+  font-size: 13px;
+  margin-top: 5px;
+  padding-left: 142px;
+  transition: color .3s;
+  width: 100%;
+}
+
+.main .travel-course .travel-course-list .travel-course-list-item > p:nth-of-type(2n) > a {
+  text-decoration: underline;
+}
+
+.main .travel-course .travel-course-list .travel-course-list-item > p:nth-of-type(2n) > a:hover {
+  color: #bf1d2a;
+}
+
+.main .hotel-info .hotel-info-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .hotel-info .hotel-info-list .hotel-info-list-item {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 10px 10px 0 10px;
+  position: relative;
+  width: 50%;
+}
+
+.main .hotel-info .hotel-info-list .hotel-info-list-item > img:first-of-type {
+  margin-bottom: 10px;
+}
+
+.main .hotel-info .hotel-info-list .hotel-info-list-item > img:nth-of-type(2n) {
+  height: 80px;
+  left: 6px;
+  position: absolute;
+  top: 6px;
+  width: 80px;
+}
+
+.main .hotel-info .hotel-info-list .hotel-info-list-item .hotel-name {
+  border-bottom: 3px solid #f8c7b7;
+  margin-bottom: 8px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.main .hotel-info .hotel-info-list .hotel-info-list-item .hotel-name img {
+  height: 51px;
+  width: auto;
+}
+
+.main .hotel-info .hotel-info-list .hotel-info-list-item .hotel-caption {
+  color: #5d310c;
+  font-size: 13px;
+  line-height: 1.23;
+}
+
+.main .hotel-info .sub-section-hotel-course .sub-section-hotel-course-title {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -webkit-box-sizing: border-box;
+  align-items: center;
+  background-color: #cab8ab;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 25px;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+  width: 190px;
+}
+
+.main .hotel-info .sub-section-hotel-course .sub-section-hotel-course-title::before {
+  background-color: #ffd70d;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: calc(100% - 10px);
+  left: 7px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  width: 6px;
+}
+
+.main .hotel-info .sub-section-hotel-course .sub-section-hotel-course-title > img {
+  height: auto;
+  width: 135px;
+}
+
+.main .hotel-info .sub-section-hotel-course .sub-section-hotel-course-list {
+  background-color: #fff;
+  border: solid 2px #df3008;
+  padding: 10px 10px 12px 10px;
+}
+
+.main .hotel-info .sub-section-hotel-course .sub-section-hotel-course-list .sub-section-hotel-course-list-item {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.main .hotel-info .sub-section-hotel-course .sub-section-hotel-course-list .sub-section-hotel-course-list-item:not(:last-child) {
+  margin-bottom: 22px;
+}
+
+.main .hotel-info .sub-section-hotel-course .sub-section-hotel-course-list .sub-section-hotel-course-list-item .course-num-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  margin-right: 15px;
+}
+
+.main .hotel-info .sub-section-hotel-course .sub-section-hotel-course-list .sub-section-hotel-course-list-item .course-num-list > dt {
+  background-color: #ad2b00;
+  color: #fff;
+  height: 30px;
+  line-height: 32px;
+  text-align: center;
+  width: 80px;
+}
+
+.main .hotel-info .sub-section-hotel-course .sub-section-hotel-course-list .sub-section-hotel-course-list-item .course-num-list > dd {
+  -webkit-box-sizing: border-box;
+  background-color: #fff;
+  border: solid 1px #ad2b00;
+  box-sizing: border-box;
+  color: #ad2b00;
+  height: 30px;
+  line-height: 32px;
+  padding: 0 15px;
+}
+
+.main .hotel-info .sub-section-hotel-course .sub-section-hotel-course-list .sub-section-hotel-course-list-item .course-name > a {
+  -webkit-text-decoration-color: transparent;
+  -webkit-transition: color .3s, -webkit-text-decoration-color .3s;
+  color: #734300;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: color .3s, -webkit-text-decoration-color .3s;
+  transition: color .3s, text-decoration-color .3s;
+  transition: color .3s, text-decoration-color .3s, -webkit-text-decoration-color .3s;
+}
+
+.main .hotel-info .sub-section-hotel-course .sub-section-hotel-course-list .sub-section-hotel-course-list-item .course-name > a:hover {
+  -webkit-text-decoration-color: #bf1d2a;
+  color: #bf1d2a;
+  text-decoration-color: #bf1d2a;
+}
+
+.footer .to-top-link {
+  display: none;
+}

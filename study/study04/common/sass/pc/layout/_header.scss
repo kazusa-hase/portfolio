@@ -1,0 +1,71 @@
+
+.header {
+
+  @include container();
+
+  // ヘッダーナビゲーション
+  .header-nav-list {
+
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 5px 0 12px;
+    
+    .header-nav-list-item {
+
+      position: relative;
+      flex-grow: 1;
+      height: 48px;
+      border: solid 1px #f98d6b;
+      box-sizing: border-box;
+      background-image: linear-gradient(to top, #dc442d 36%, #e76620 79%, #ffb400);
+      text-align: center;
+
+      &:not(:first-child)::before {
+        position: absolute;
+        top: 0;
+        left: -1px;
+        display: block;
+        width: 1px;
+        height: 100%;
+        background-image: linear-gradient(to top, #8c0707, #ffe4da);
+        content: '';
+      }
+      
+      &>a {
+
+        display: inline-block;
+        height: 100%;
+        padding-bottom: 14px;
+        box-sizing: border-box;
+        font-size: 18px;
+        color: #fff;
+        text-shadow: 0.5px 0.9px 1px rgba(0, 0, 0, 0.75);
+        letter-spacing: 0.07222em;
+        line-height: 2;
+        transition: opacity .3s;
+
+        &::before {
+          display: inline-block;
+          width: 15px;
+          height: 100%;
+          margin-right: 7px;
+          background: 
+            url(/portfolio/study/study04/common/img/nav-item-pc-arrow.png)
+            no-repeat
+            left top 20px;
+          content: '';
+        }
+
+        &:hover {
+          opacity: .8;
+        }
+
+      }
+
+    } // item
+
+
+  } // list
+
+
+} // header

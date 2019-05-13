@@ -1,0 +1,129 @@
+
+.header {
+
+  height: 100vh;
+  padding-top: 30px;
+  box-sizing: border-box;
+  background: 
+  url(../img/hero-img.jpg)
+  no-repeat
+  fixed
+  center center
+  /cover;
+  color: #fff;
+  text-align: center;
+
+  @include media-sp() {
+    height: 70vh;
+    background-image: url(../img/hero-img-sp.jpg);
+  }
+
+
+  .menu-bar {
+
+    float: left;
+    width: 100%;
+    transition: .3s;
+
+    @include media-pc() {
+      float: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 999;
+      box-shadow: 0 5px 10px rgba(#000, .5);
+      background-color: #111;
+    }
+
+  }
+
+  @at-root .fixed {
+    float: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 5px 10px rgba(#000, .5);
+    background-color: #111;
+  }
+  
+  .header-inner-wrapper {
+  
+    position: relative;
+    display: flex;
+    padding: 5px 0;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    .header-title {
+      
+      height: 57px;
+      padding-left: 60px;
+      background: 
+      url(../img/logo01.png)
+      no-repeat
+      left center;
+      line-height: 57px;
+
+      @media screen and (max-width: 640px) {;
+
+        $logo-size: 57 / 640 * 100vw;
+
+        padding-left: $logo-size;
+        background-size: $logo-size;
+
+        $font-size: 32 / 640 * 100vw;
+        font-size: $font-size;
+
+      }
+      
+    }
+    
+    // ナビゲーションメニュー
+    @import "../object/component/header/_header-nav-menu.scss";
+    
+    // メニューボタン
+    @import "../object/component/header/_header-menu-btn.scss";
+
+  }
+
+  .sub-title {
+
+    padding: 267px 0 70px;
+    font-size: 2.5rem;
+    font-family: 'Kaushan Script', cursive;
+
+    @include media-sp() {
+
+      padding: 57px 0 30px;
+
+      $font-size: 40 / 767 * 100vw;
+      font-size: $font-size;
+
+    }
+
+  }
+
+  .lead-copy {
+
+    display: inline-block;
+    margin-bottom: 100px;
+    padding: 20px 40px;
+    background-color: rgba(#000, 0.6);
+    line-height: 1.5;
+    
+    @include media-sp() {
+      margin: 0 10px 30px 10px;
+      padding: 10px 30px;
+      text-align: left;
+    }
+
+  }
+
+  // ジャンプボタン
+  @import "../object/component/header/_header-jump-btn.scss";
+
+}

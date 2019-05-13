@@ -1,0 +1,23 @@
+
+.meal-course-header {
+
+  padding: 15px 10px 14px;
+  background: 
+    url(/portfolio/study/study03/common/img/bg-header.png)
+    no-repeat
+    left bottom 1px
+    /340px auto,
+    linear-gradient(#{$main-color-01} 90%, #{$base-color-02} 10%);
+
+  @include media-sp() {
+    padding: size(27) size(19) size(25);
+    background-size: 100% auto;
+  }
+
+  // title
+  @import "./section-header-title/_section-header-title.scss";
+
+  // course number
+  @import "./section-header-course-num/_section-header-course-num.scss";
+
+}

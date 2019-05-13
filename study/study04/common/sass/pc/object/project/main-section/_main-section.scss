@@ -1,0 +1,85 @@
+  
+.main-section {
+  
+  position: relative;
+  padding: 70px 10px 10px;
+  border: solid 1px #e9c0b8;
+  box-sizing: border-box;
+  background: 
+    #fff0ed
+    url(/portfolio/study/study04/common/img/bg-pc-momiji.jpg)
+    no-repeat
+    right top
+    /100% auto;
+
+  &+section {
+    margin-top: 60px;
+  }
+
+  // メインセクション ヘッダー
+  .main-section-title {
+
+    position: absolute;
+    top: -4px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    width: 280px;
+    height: 59px;
+    padding-left: 23px;
+    border: solid 4px #921b00;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 1.3px 1.5px 4px 0 rgba(0, 0, 0, 0.35);
+    background-color: #df3008;
+    
+    &>img {
+      width: 198px;
+      height: auto;
+    }
+
+  }
+
+  // ページトップリンク
+  .to-top-link {
+
+    position: absolute;
+    bottom: -29px;
+    right: 0;
+
+    &>a {
+
+      color: #009;
+      font-size: 12px;
+      text-decoration: underline;
+      transition: opacity .3s;
+      
+      &::before {
+        display: inline-block;
+        margin-right: 2px;
+        content: '▲';
+        font-size: 10px;
+        transform: scale(0.8);
+      }
+
+      &:hover {
+        opacity: .6;
+      }
+
+    }
+    
+  }
+
+}
+
+// セクション01 もみじ饅頭マップ
+@import "./each-section/_momiji-map.scss";
+
+// セクション02 混雑具合カレンダー
+@import "./each-section/_congestion-calendar.scss";
+
+// セクション03 旅行プラン
+@import "./each-section/_travel-course.scss";
+
+// セクション04 憧れの名門ホテル 
+@import "./each-section/_hotel-info.scss";

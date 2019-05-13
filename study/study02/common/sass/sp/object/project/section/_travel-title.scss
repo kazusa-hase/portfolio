@@ -1,0 +1,43 @@
+
+  .title-box {
+
+    order: 2;
+    position: relative;
+    margin: 0 vws(20) vws(20);
+    padding: vws(11) vws(14) vws(8) vws(21);
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: #ff7d73;
+  
+    &::before {
+
+      position: absolute;
+      $top: vws(5);
+      top: $top;
+      left: vws(8);
+      display: block;
+      width: vws(5);
+      height: calc(100% - #{$top*2});
+      content: "";
+      background: #ffe073;
+
+    }
+  
+    a.title {
+      
+      display: block;
+      color: #fff;
+      font-size: vws(36);
+      line-height: 1.11;
+      letter-spacing: -0.02em;
+      font-weight: normal;
+      text-decoration: underline;
+      text-decoration-color: #fff;
+
+      &:not(:first-child) {
+        margin-top: vws(10);  
+      }
+      
+    }
+
+  }

@@ -1,0 +1,27 @@
+@charset 'utf-8';
+
+// プロパティ or メソッド
+
+@import "./foundation/variable";
+
+@import "./foundation/function";
+
+@import "./foundation/mixin";
+
+
+// ファウンデーション
+
+@import "./foundation/reset";
+
+@import "./foundation/base";
+
+@import "./foundation/common";
+
+
+// コンテンツ
+
+@import "./layout/header";
+
+@import "./layout/main";
+
+@import "./layout/footer";

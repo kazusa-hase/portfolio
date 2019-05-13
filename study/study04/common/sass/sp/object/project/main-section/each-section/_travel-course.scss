@@ -1,0 +1,111 @@
+
+.travel-course {
+
+  // プランリスト
+  .travel-course-list {
+
+    border: solid size(2) #df3008;
+    box-sizing: border-box;
+    background-color: #fff;
+    
+    .travel-course-list-item {
+      
+      position: relative;
+      padding: size(22) size(75) size(22) size(22);
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #b8b8b8;
+      }
+      
+      // コースナンバー
+      .course-num-list {
+
+        display: flex;
+        font-size: size(26);
+        margin-bottom: size(20);
+        
+        &>dt {
+          width: size(173);
+          height: size(64);
+          padding: size(19) 0 size(19) size(17);
+          box-sizing: border-box;
+          background-color: #ad2b00;
+          color: #fff;
+        }
+        
+        &>dd {
+          width: size(130);
+          height: size(64);
+          padding: size(18) 0 size(18) size(16);
+          border: solid size(1) #ad2b00;
+          box-sizing: border-box;
+          background-color: #fff;
+          color: #ad2b00;
+        }
+
+      }
+
+      // コースキャプション
+      &>p:first-of-type {
+
+        &>a {
+
+          color: #734300;
+          font-size: size(32);
+          font-weight: bold;
+          line-height: 1.31;
+          
+          // 矢印アイコン
+
+          &>span {
+            position: absolute;
+            top: 0;
+            right: size(21);
+            bottom: 0;
+            margin: auto;
+            display: block;
+            width: size(16);
+            height: size(28);
+          }
+
+          &>span::before, &>span::after {
+            position: absolute;
+            right: size(6);
+            display: block;
+            width: size(4);
+            height: size(18);
+            background-color: #b8b8b8;
+            content: '';
+          }
+
+          &>span::before {
+            top: 0;
+            transform: rotate(-45deg);
+          }
+          
+          &>span::after {
+            bottom: 0;
+            transform: rotate(45deg);
+          }
+
+        } // a
+
+      } // p
+
+      // コースサブキャプション
+      &>p:nth-of-type(2n) {
+
+        margin-top: size(18);
+        font-size: size(28);
+
+        &>a {
+          text-decoration: underline;
+        }
+
+      }
+
+    } // li
+
+  } // ul
+
+}

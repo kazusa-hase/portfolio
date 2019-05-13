@@ -1,0 +1,195 @@
+
+.footer {
+
+  padding: 100px 0 30px;
+  background-color: #111;
+  color: #fff;
+
+  @include media-sp() {
+    padding: 30px 0;
+  }
+
+
+  .club-info-list {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 70px;
+
+    @include media-sp() {
+      display: none;
+    }
+
+
+    .club-info-item {
+
+      width: calc((100% - 60px) / 4);
+      
+      @include media-pc() {
+
+        width: calc((100% - 40px) / 2);
+
+        &:nth-child(n + 3) {
+          margin-top: 40px;
+        }
+      
+      }
+
+
+      .club-info-label {
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+
+    }
+
+    // クラブについて
+    .club-info-item-about-us {
+
+      .club-name {
+        margin-bottom: 10px;
+      }
+
+      .doc-about-us {
+        margin-bottom: 10px;
+        line-height: 1.5;
+      }
+
+      // SNSアイコン
+      .club-info-item-sns {
+
+        & > a {
+
+          font-size: 32px;
+          transition: opacity .3s;
+
+          &:hover {
+            opacity: .7;
+          }
+
+          & + a {
+            margin-left: 2px;
+          }
+
+        }
+
+      }
+
+    }
+
+
+    // お問い合わせ
+    .club-info-item-contact-info {
+
+      .club-address {
+        margin-bottom: 20px;
+        font-size: 14px;
+      }
+
+      .contact-info-list-item {
+
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+
+        & > a {
+
+          display: inline-flex;
+          align-items: center;
+          
+          &:hover .fas  {
+            opacity: 1;
+          }
+          
+          & > .fas {
+            
+            $font-size: 32px;
+            
+            display: inline-block;
+            width: $font-size;
+            color: #fff;
+            font-size: $font-size;
+            text-align: center;
+            opacity: .7;
+            transition: opacity .3s;
+
+          }
+
+          & > img {
+            width: auto;
+            height: 20px;
+            margin-left: 20px;
+          }
+
+        }
+
+      }
+
+    }
+
+
+    // 開業時間
+    .club-info-item-opening-hour {
+
+      .opening-hour-list {
+
+        display: flex;
+        flex-flow: row wrap;
+        font-size: 14px;
+
+        $mb: 20px;
+        
+        & > dt {
+          margin-bottom: $mb;
+        }
+        
+        & > dd {
+          flex: 1 0 60%;
+          margin-bottom: $mb;
+        }
+
+      }
+
+    }
+
+
+    // 投稿された記事
+    .club-info-item-post-list {
+
+      .post-list > div {
+
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        margin-bottom: 20px;
+        
+        & > dt {
+          margin-right: 5px;
+          padding: 2px;
+          background-color: #f67e24;
+        }
+
+        & > dd {
+          flex: 1 0 auto;
+          text-decoration: underline;
+        }
+        
+      }
+
+    }
+
+
+  }
+
+  .copywrite {
+
+    // none
+
+    @include media-pc() {
+      text-align: center;
+    }
+
+  }
+  
+}

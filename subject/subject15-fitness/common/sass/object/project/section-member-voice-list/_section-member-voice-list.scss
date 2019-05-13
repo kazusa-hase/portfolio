@@ -1,0 +1,117 @@
+
+.section-member-voice-list {
+
+  padding: 100px 0;
+  background: 
+  url(../img/bg-member-voice.jpg)
+  no-repeat
+  fixed
+  center center
+  /cover;
+  color: #fff;
+  text-align: center;
+  
+  @include media-sp() {
+    padding: 30px 0;   
+  }
+
+
+  // タイトル
+  .member-voice-title {
+
+    margin-bottom: 70px;
+
+    @include media-sp() {
+      margin-bottom: 20px;
+    }
+
+  }
+
+  // 会員の声リスト
+  .member-voice-list {
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+
+    @include media-sp() {
+      display: block;
+      margin-bottom: 40px;
+    }
+
+
+    // 会員の声リストアイテム
+    .member-voice-list-item {
+      
+      display: flex;
+      flex-flow: row wrap;
+      width: calc((100% - 40px) / 3);
+      padding: 20px;
+      border: 1px solid #aaa;
+      box-sizing: border-box;
+      
+      @include media-sp() {
+
+        width: 100%;
+
+        &:not(last-child) {
+          margin-bottom: 20px;
+        }
+
+      }
+
+
+      // 会員の声
+      .member-voice {
+        flex: 1 0 100%;
+        margin-bottom: 20px;
+        line-height: 1.5;
+        text-align: left;
+      }
+  
+      // 会員の写真
+      .member-thumbnail {
+
+        overflow: hidden;
+        width: 33.3%;
+        height: auto;
+        border-radius: 50%;
+
+        & > img {
+          width: 100%;
+        }
+
+      }
+
+      // 会員の情報
+      .member-info {
+
+        flex: 1 0 auto;
+        align-self: center;
+
+        // 会員の名前
+        .member-name {
+          display: block;
+          margin-bottom: 8px;
+        }
+    
+        // インタビューの日付
+        .member-voice-date {
+          // none
+        }
+
+      }
+  
+
+    }
+
+
+  }
+
+  // 詳細ボタン
+  .to-detail-btn {
+    @import "../../component/_to-detail-btn.scss";
+    @include to-detail-btn();
+  }
+
+}

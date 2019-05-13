@@ -1,0 +1,28 @@
+
+.course-point-sub-title {
+
+  position: relative;
+  width: 100%;
+  height: 22px;
+
+  &>img {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    right: 0;
+    width: 151px;
+    margin: auto;
+  }
+
+  @include media-sp() {
+
+    height: size(39);
+    
+    & > img {
+      top: size(11);
+      width: size(266);  
+    }
+
+  }
+
+}

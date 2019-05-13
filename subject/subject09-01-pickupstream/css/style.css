@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+/*reset
+--------------------------------------------------*/
+html, body, h1, h2, p, ul, li {
+	margin: 0;
+	padding: 0;
+	font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	font-weight: 500;
+	line-height: 1.0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: bottom;
+	border: none;
+}
+
+/*.container
+--------------------------------------------------*/
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/*.header
+--------------------------------------------------*/
+.header h1 {
+	margin: 10px 0;
+}
+
+.gnav {
+	overflow: hidden;
+}
+
+.gnav li {
+	text-align: center;
+}
+
+.gnav a {
+	display: block;
+	float: left;
+	width: calc(100%/5);
+	height: 35px;
+	background: url(../img/nav_bg.jpg) repeat-x;
+	border-right: 1px solid #fff;
+	padding-top: 2px;
+	box-sizing: border-box;
+	color: #fff;
+	font-weight: lighter;
+	line-height: 35px;
+}
+
+.gnav li:last-child a {
+	border-right: none;
+}
+
+.gnav a:hover {
+	background-position: left bottom;
+}
+
+/*munu button*/
+#menuBtn {
+	display: none;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	background: #077474;
+}
+#menuBtn>span {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: 75%;
+	height: 3px;
+	border-radius: 5px;
+	background: #fff;
+}
+#menuBtn>span::before, #menuBtn>span::after {
+	display: block;
+	content: "";
+	width: 100%;
+	height: 3px;
+	border-radius: 5px;
+	background: #fff;
+}
+#menuBtn>span::before {
+	margin-top: -12px;
+}
+#menuBtn>span::after {
+	margin-top: 21px;
+}
+
+/*.wrap
+--------------------------------------------------*/
+.wrap {
+	overflow: hidden;
+	padding: 30px 0;
+}
+
+/*article
+--------------------------------------------------*/
+article {
+	float: right;
+	width: 65.6%;
+}
+
+article h2 {
+	margin-bottom: 10px;
+	padding-left: 5px;
+	border-left: 28px solid #185a68;
+	font-size: 28px;
+	font-weight: bolder;
+	color: #185a68;
+}
+
+article p {
+	margin-bottom: 10px;
+	color: #667;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+article img {
+	border: 8px solid #185a68;
+	box-sizing: border-box;
+}
+
+/*.sidebar
+--------------------------------------------------*/
+.sidebar {
+	float: left;
+	width: 31%;
+}
+
+.sidebar h2 {
+	margin-bottom: 10px;
+	font-size: 28px;
+	font-weight: bolder;
+	color: cornflowerblue;
+	font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+.sidebar ul {
+	margin-bottom: 40px;
+}
+
+.sidebar a {
+	display: block;
+	background: url(../img/listmark.png) no-repeat 2px center;
+	padding: 16px 0px 15px 20px;
+	border-top: 1px solid #aaa; 
+	color: #999;
+	font-weight: bolder;
+}
+
+.sidebar li:last-child a {
+	border-bottom: 1px solid #aaa;
+}
+
+.sidebar a:hover {
+	background-color: #def;
+}
+
+/*.footer
+-------------------------------------------------*/
+.footer {
+	padding: 20px;
+	background: #185a68;
+}
+
+.footer p {
+	color: #fff;
+	font-weight: bolder;
+	line-height: 1.4;
+}
+
+
+
+
+
+/*media query
+-------------------------------------------------*/
+@media screen and (max-width: 767px) {
+/*	.contaner*/
+	.container {
+		padding: 0 10px;
+	}
+/*	header*/
+	h1 {
+		width: calc(100% - 50px - 5px);
+	}
+/*	navigation*/
+	.gnav {
+		display: none;
+		position: absolute;
+		top: 55px;
+		width: calc(100% - 20px);
+		overflow: visible;
+	}
+	.gnav a {
+		float: none;
+		width: 100%;
+		height: 44px;
+		border: none;
+		background-size: auto 88px;
+		line-height: 44px;
+	}
+	.gnav li:last-child a {
+		border-bottom: none;
+	}
+/*	munu button*/
+	#menuBtn {
+		display: block;
+	}
+/*	.wrap*/
+	.wrap {
+		overflow: visible;
+		padding: 20px 0;
+	}
+/*	article*/
+	article {
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+	}  
+	article h2 {
+		font-size: 24px;
+	}
+	article p {
+		width: 100%;
+	}
+	article img {
+		display: block;
+		margin: 0 auto;
+	}
+/*	.sidebar*/
+	.sidebar {
+		float: none;
+		width: 100%;
+	}
+	.sidebar img {
+		display: block;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.sidebar ul {
+		margin-bottom: 20px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+

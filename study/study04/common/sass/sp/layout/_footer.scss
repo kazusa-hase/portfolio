@@ -1,0 +1,43 @@
+
+.footer {
+
+  padding: size(45) 0;
+
+  // トップビューへ戻るリンク
+  .to-top-link {
+
+    text-align: center;
+
+    &>a {
+
+      position: relative;
+      display: inline-block;
+      font-size: size(24);
+
+      &::before, &::after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        display: block;
+        width: size(4);
+        height: size(20);
+        background-color: #b8b8b8;
+        content: '';
+      }
+
+      &::before {
+        left: size(-27);
+        transform: rotate(45deg)
+      }
+      
+      &::after {
+        left: size(-15);
+        transform: rotate(-45deg)
+      }
+
+    }
+
+  }
+
+}

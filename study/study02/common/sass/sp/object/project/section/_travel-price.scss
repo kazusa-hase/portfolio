@@ -1,0 +1,29 @@
+
+.price-box {
+
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: vws(20);
+
+  .lead {
+    margin-top: vws(32);
+    font-size: vws(32);
+  }
+
+  .price {
+
+    color: #f00;
+    font-size: vws(76);
+    letter-spacing: -0.003em;
+
+    &>span {
+      font-size: vws(36)
+    }
+
+  }
+
+  .detail {
+    display: none;
+  }
+
+}

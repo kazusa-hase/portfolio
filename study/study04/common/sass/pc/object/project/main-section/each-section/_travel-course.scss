@@ -1,0 +1,101 @@
+
+.travel-course {
+
+  // プランリスト
+  .travel-course-list {
+
+    padding: 8px 8px 10px;
+    border: solid 2px #df3008;
+    box-sizing: border-box;
+    background-color: #fff;
+    
+    .travel-course-list-item {
+      
+      position: relative;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+
+      &+li {
+        margin-top: 22px;
+      }
+      
+      // コースナンバー
+      .course-num-list {
+
+        display: flex;
+        font-size: 13px;
+        margin-right: 10px;
+        
+        &>dt {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 80px;
+          height: 30px;
+          background-color: #ad2b00;
+          color: #fff;
+        }
+        
+        &>dd {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 60px;
+          height: 30px;
+          border: solid 1px #ad2b00;
+          box-sizing: border-box;
+          background-color: #fff;
+          color: #ad2b00;
+        }
+
+      }
+
+      // コースキャプション
+      &>p:first-of-type {
+
+        &>a {
+
+          color: #734300;
+          font-size: 16px;
+          text-decoration: underline;
+          text-decoration-color: transparent;
+          transition: color .3s, text-decoration-color .3s;
+          
+          &:hover {
+            color: #bf1d2a;
+            text-decoration-color: #bf1d2a;
+          }
+
+        }
+
+      }
+
+      // コースサブキャプション
+      &>p:nth-of-type(2n) {
+
+        width: 100%;
+        margin-top: 5px;
+        padding-left: 142px;
+        box-sizing: border-box;
+        color: #734300;
+        font-size: 13px;
+        transition: color .3s;
+
+        &>a {
+
+          text-decoration: underline;
+
+          &:hover {
+            color: #bf1d2a;
+          }
+
+        }
+
+      }
+
+    } // li
+
+  } // ul
+
+}

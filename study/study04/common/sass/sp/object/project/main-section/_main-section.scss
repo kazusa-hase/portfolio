@@ -1,0 +1,54 @@
+  
+.main-section {
+  
+  background: 
+    #fff0ed
+    url(/portfolio/study/study04/common/img/bg-momiji.jpg)
+    no-repeat
+    right top
+    /100% auto;
+
+  &+section {
+    margin-top: size(41);
+  }
+
+  // メインセクション ヘッダー
+  .main-section-title {
+
+    padding: size(12) 0 size(16) size(22);
+    border-top: size(4) solid #921b00;
+    border-bottom: size(4) solid #921b00;
+    box-sizing: border-box;
+    box-shadow: size(1) size(2) size(4) rgba(0,0,0,0.35);
+    background-color: #df3008;
+    
+    &>img {
+      width: auto;
+      height: size(34);
+    }
+
+  }
+
+  // メインセクション ボディー
+  .main-section-body {
+    padding: size(27) size(20) size(25);
+  }
+
+  // ページトップリンク
+  .to-top-link {
+    display: none;
+  }
+
+}
+
+// セクション01 もみじ饅頭マップ
+@import "./each-section/_momiji-map.scss";
+
+// セクション02 混雑具合カレンダー
+@import "./each-section/_congestion-calendar.scss";
+
+// セクション03 旅行プラン
+@import "./each-section/_travel-course.scss";
+
+// セクション04 憧れの名門ホテル 
+@import "./each-section/_hotel-info.scss";

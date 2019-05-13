@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>Flowershop:はなや</title>
+	<meta name="description" content="世界中のお花をお取り寄せ!是非お問合せ下さい">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="shortcut" href="favicon.ico" type="image/vnd.microsoft.ico">
+</head>
+<body>
+
+	<div class="container">
+	
+		<header>
+			<h1>Flowershop:はなや</h1>
+			<p>世界中のお花をお取り寄せ!是非お問合せ下さい</p>
+			<p class="btn" id="btn"><span></span></p>
+		</header>
+		
+		<nav id="nav">
+			<ul>
+				<li class="list list1">
+					<a href="#">HOME</a>
+				</li>
+				<li class="list list2">
+					<a href="#">ABOUT</a>
+				</li>
+				<li class="list list3">
+					<a href="#">SHOP</a>
+				</li>
+				<li class="list list4">
+					<a href="#">GIFT</a>
+				</li>
+				<li class="list list5">
+					<a href="#">CONTACT</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<p class="mainImage">
+			<img src="img/kansei.jpg" alt="様々な花の画像">
+		</p>
+		
+		<footer>
+			<small>Copyright &copy; Flowershop : 花や All rights reserved.</small>
+		</footer>
+		
+	</div>
+	<!--   /.container-->
+
+
+<!--	library_src
+------------------------------------------->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<!--	script
+------------------------------------------->
+	<script>
+		$(function() {
+			
+			const $event = 'click';
+			
+			$('#btn').on($event, function() {
+				
+				$(this).toggleClass('close');
+				
+				$('#nav').fadeToggle('slow');
+				
+			});
+			
+		});
+	</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

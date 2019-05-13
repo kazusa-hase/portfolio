@@ -1,0 +1,62 @@
+
+.header {
+
+  // ヘッダーナビゲーション
+  .header-nav-list {
+
+    display: flex;
+    flex-flow: row wrap;
+    padding: size(19) 0 size(17);
+    
+    .header-nav-list-item {
+
+      &:nth-child(even) {
+        margin-left: size(10);
+      }
+
+      &:nth-child(n + 3) {
+        margin-top: size(9);
+      }
+      
+      &>a {
+
+        position: relative;
+        display: block;
+        width: size(295);
+        padding: size(28) 0 size(28) size(15);
+        box-sizing: border-box;
+        border-radius: size(8);
+        background-color: #f9a208;
+        color: #fff;
+        font-size: size(26);
+        font-weight: bold;
+
+        &::before, &::after {
+          position: absolute;
+          bottom: size(32);
+          display: block;
+          width: size(4);
+          height: size(18);
+          background-color: #fff;
+          content: '';
+        }
+
+        &::before {
+          right: size(20);
+          transform: rotate(45deg)
+        }
+
+        &::after {
+          right: size(30);
+          transform: rotate(-45deg)
+        }
+
+      }
+
+    } // item
+
+
+  } // list
+
+
+} // header

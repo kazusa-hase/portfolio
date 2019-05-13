@@ -1,0 +1,38 @@
+
+.appeal-box {
+      
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 12px;
+  background: #ff7d73;
+
+  &>dt {
+    align-self: center;
+    width: max-content;
+    padding: 3px 8px 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &>dd {
+
+    flex: 1 0 auto;
+    padding: 9px 7px 5px;
+    background: #fff0b9;
+    color: #ff7d73;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.25;
+
+    &>span {
+      display: block;
+    }
+    
+    &>p:nth-child(2n) {
+      margin-top: 6px;
+    }
+    
+  }
+
+}

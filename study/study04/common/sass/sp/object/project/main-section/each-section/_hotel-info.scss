@@ -1,0 +1,187 @@
+
+.hotel-info {
+
+  .hotel-info-list {
+
+    margin-bottom: size(39);
+    
+    .hotel-info-list-item {
+      
+      position: relative;
+      padding: size(25) size(22) size(42);
+      background-color: #fff;
+      
+      &+li {
+        margin-top: size(20);
+      }
+
+      &>img:first-of-type {
+        margin-bottom: size(24);
+      }
+      
+      &>img:nth-of-type(2n) {
+        position: absolute;
+        top: size(19);
+        left: size(8);
+        width: size(120);
+        height: size(120);
+      }
+
+      .hotel-name {
+
+        margin-bottom: size(20);
+        padding-bottom: size(10);
+        padding-left: size(10);
+        border-bottom: size(3) solid #f8c7b7;
+
+        & img {
+          width: auto;
+          height: size(48);
+        }
+
+      }
+
+      .hotel-caption {
+        color: #5d310c;
+        font-size: size(24);
+        line-height: 1.25;
+      }
+
+    }
+
+  }
+
+
+  // サブセクション ホテル宿泊コース
+
+  .sub-section-hotel-course {
+
+
+    // タイトル
+    .sub-section-hotel-course-title {
+
+      position: relative;
+      width: size(360);
+      box-sizing: border-box;
+      background-color: #cab8ab;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: size(13);
+        bottom: 0;
+        margin: auto;
+        display: block;
+        width: size(12);
+        height: size(29);
+        background-color: #ffd70d;
+        content: '';
+      }
+
+      &>img {
+        width: size(255);
+        height: auto;
+        padding: size(12) 0 size(12) size(39);
+      }
+      
+    }
+
+
+    // コースリスト
+    .sub-section-hotel-course-list {
+      
+      border: solid size(2) #df3008;
+      box-sizing: border-box;
+
+      .sub-section-hotel-course-list-item {
+
+        position: relative;
+        padding: size(22);
+        background-color: #fff;
+
+        &:not(:last-child) {
+          border-bottom: size(1) solid #b8b8b8;
+        }
+
+        // コースナンバー
+        .course-num-list {
+
+          display: flex;
+          margin-bottom: size(20);
+          font-size: size(26);
+
+          &>dt {
+            width: size(173);
+            height: size(64);
+            padding: size(19) 0 size(19) size(17);
+            box-sizing: border-box;
+            background-color: #ad2b00;
+            color: #fff;
+          }
+          
+          &>dd {
+            width: size(155);
+            height: size(64);
+            padding: size(18) 0 size(18) size(16);
+            border: solid size(1) #ad2b00;
+            box-sizing: border-box;
+            background-color: #fff;
+            color: #ad2b00;
+          }
+
+        }
+
+        // コースネーム
+        .course-name {
+
+          &>a {
+
+            color: #734300;
+            font-size: size(32);
+            font-weight: bold;
+
+            // 矢印アイコン
+
+            &>span {
+              position: absolute;
+              top: 0;
+              right: size(21);
+              bottom: 0;
+              margin: auto;
+              display: block;
+              width: size(16);
+              height: size(28);
+            }
+
+            &>span::before, &>span::after {
+              position: absolute;
+              right: size(6);
+              display: block;
+              width: size(4);
+              height: size(18);
+              background-color: #b8b8b8;
+              content: '';
+            }
+  
+            &>span::before {
+              top: 0;
+              transform: rotate(-45deg);
+            }
+            
+            &>span::after {
+              bottom: 0;
+              transform: rotate(45deg);
+            }
+            
+          } // a
+
+        } // p
+
+      } // li
+
+    } // ul
+
+  }
+  
+
+} 

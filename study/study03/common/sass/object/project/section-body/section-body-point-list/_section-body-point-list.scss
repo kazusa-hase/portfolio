@@ -1,0 +1,46 @@
+
+.course-point-list {
+
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 17px 0 13px;
+  box-sizing: border-box;
+  background-color: $main-color-02;
+
+  & > li {
+
+    padding: 0 11px 0 30px;
+    background:
+      url(/portfolio/study/study03/common/img/dt-mark.png)
+      no-repeat
+      left 10px top 0px
+      /13px 15px;
+    line-height: 1.1;
+
+    &:not(:first-of-type) {
+      margin-top: 5px;
+    }
+    
+  }
+  
+  @include media-sp() {
+    
+    margin-bottom: size(20);
+    padding: size(32) 0 size(20);
+    
+    & > li {
+      
+      padding: 0 size(20) 0 size(53);
+      background-position: left size(18) top 0;
+      background-size: size(23) size(27);
+      font-size: size(28);
+
+      &:not(:first-of-type) {
+        margin-top: size(16);
+      }
+
+    }
+    
+  }
+
+}

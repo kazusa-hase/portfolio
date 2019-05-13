@@ -1,0 +1,7 @@
+
+// Convert px to vw
+
+@function vws($pxs) {
+  $vws: ($pxs/640)*100vw;
+  @return $vws;
+}

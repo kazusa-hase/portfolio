@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+/*reset
+---------------------------------------------*/
+html, body, h1, h2, p, ul, li {
+	margin: 0;
+	padding: 0;
+	line-height: 1.0;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+img {
+	vertical-align: bottom;
+	border: none;
+}
+
+/*base
+---------------------------------------------*/
+body {
+	background: #FFFF90;
+	color: #333;
+	font-family: 
+		-apple-system, 
+		BlinkMacSystemFont,
+		Meiryo,
+		sans-serif;
+	font-weight: 500;
+}
+
+/*layout
+---------------------------------------------*/
+.container {
+	display: flex;
+	min-width: 320px;
+}
+
+/*media query -layout
+----------------------------*/
+@media (max-width: 767px), (min-width: 1000px) {
+	.container {
+		display: block;
+	}
+}
+
+
+/*header
+---------------------------------------------*/
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 10px;
+}
+.logoImg {
+	position: relative;
+	width: 180px;
+}
+.logoImg::before {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 180px;
+	height: 180px;
+	border: 4px solid #EB7F00;
+	box-sizing: border-box;
+	background-color: transparent;
+	border-radius: 50%;
+}
+
+/*media query -header
+----------------------------*/
+@media (max-width: 767px), (min-width: 1000px) {
+	.header {
+		display: flex;
+		padding:10px 0;
+	}
+	.logoImg {
+		width: 80px;
+	}
+	.logoImg::before {
+		width: 80px;
+		height: 80px;
+		border: 2px solid #eb7f00;
+	}
+}
+
+
+/*main
+---------------------------------------------*/
+.main {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1 0 auto;
+}
+
+/*images*/
+.ph {
+	width: 50%;
+	height: 50vh;
+}
+.ph:nth-child(n + 3) {
+	width: 33.333%;
+}
+
+.topL {
+	position: relative;
+	background: 
+	url(../img/heroImage-sweet01.jpg) 
+	no-repeat 
+	center 
+	/ cover;
+}
+
+.ph>a {
+	display: block;
+	height: 50vh;
+	background: rgba(0, 0, 0, 0.3);
+	color: rgba(255, 255, 255, 1);
+	text-align: center;
+}
+.ph>a>.caption {
+	position: absolute;
+	top: 25vh;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 80%;
+}
+.ph:nth-child(n + 3)>a>.caption {
+	width: 85%;
+}
+.ph h2 {
+	margin-bottom: 10px;
+}
+.ph p {
+	line-height: 1.5;
+}
+
+.topR {
+	position: relative;
+	background: 
+	url(../img/heroImage-sweet05.jpg) 
+	no-repeat 
+	center 
+	/ cover;
+}
+.btmL {
+	position: relative;
+	background: 
+	url(../img/heroImage-sweet03.jpg) 
+	no-repeat 
+	center 
+	/ cover;
+}
+.btmM {
+	position: relative;
+	background: 
+	url(../img/heroImage-sweet02.jpg) 
+	no-repeat 
+	center 
+	/ cover;
+}
+.btmR {
+	position: relative;
+	background: 
+	url(../img/heroImage-sweet04.jpg) 
+	no-repeat 
+	center 
+	/ cover;
+}
+
+/*media query -main
+----------------------------*/
+@media (max-width: 767px) {
+	.main {
+		display: block;
+	}
+	/*images*/
+	.ph {
+		width: 100%;
+		height: calc(50vh - 50px);
+	}
+	.ph:nth-child(n + 3) {
+		width: 100%;
+	}
+	.ph>a {
+		display: block;
+		height: calc(50vh - 50px);
+		background: transparent;
+	}
+	
+	.ph>a>.caption {
+		position: absolute;
+		top: 25vh;
+		right: 30px;
+		left: 30px;
+		padding: 20px;
+		box-sizing: border-box;
+		background: rgba(0, 0, 0, 0.4);
+	}
+}
+
+@media (min-width: 768px) {
+	.ph>a {
+		opacity: 0;
+		transition: 0.3s;
+	}
+	.ph>a:hover {
+		opacity: 1;
+	}
+}
+
+@media (min-width: 1000px) {
+	/*images*/
+	.ph {
+		height: calc(50vh - 50px);
+	}
+	.ph>a {
+		display: block;
+		height: calc(50vh - 50px);
+		background: transparent;
+	}
+	.ph>a>.caption {
+		position: absolute;
+		top: 25vh;
+		padding: 20px;
+		box-sizing: border-box;
+		background: rgba(0, 0, 0, 0.4);
+	}
+}
+
+
+
+
+
+
+
+

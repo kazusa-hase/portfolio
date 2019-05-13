@@ -1,0 +1,21 @@
+
+.momiji-map {
+  
+  .momiji-map-caption {
+    margin-bottom: size(32);
+    font-size: size(28);
+    line-height: 1.5;
+  }
+
+  .momiji-map-lead {
+
+    margin-bottom: size(16);
+
+    & img {
+      width: auto;
+      height: size(52);
+    }
+
+  }
+
+}

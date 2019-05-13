@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+/*reset*/
+/*------------------------------------------------*/
+
+html, body, h1, h2, h3, p, ul, li, dl, dt, dd {
+/*    外側の余白*/
+    margin: 0;
+/*    内側の余白*/
+    padding: 0;
+/*    使用するフォント*/
+    font-family: "游ゴシック", YuGothic, "Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
+/*    フォントの太さ*/
+    font-weight: 500;
+/*    行の高さ*/
+    line-height: 1.0;
+}
+
+ul {
+/*    中黒を取る*/
+    list-style: none;
+}
+
+a {
+/*    下線を取る*/
+    text-decoration: none;
+}
+
+img {
+/*    縦位置をbottomに*/
+    vertical-align: bottom;
+/*    下線の非表示*/
+    border: none;
+}
+
+
+/*css*/
+/*------------------------------------------------*/
+
+
+/*.container*/
+
+.container {
+/*    横幅*/
+    width: 960px;
+/*    外側の余白*/
+    margin: 0 auto;
+/*    背景色*/
+    background: #ffe;
+/*    ボーダー*/
+    border: 2px solid #fcc;
+}
+
+
+/*.page*/
+
+.page {
+/*    内側の余白*/
+    padding: 0 20px;
+}
+
+
+/*共通項*/
+
+header, ul, h2, h3, img {
+/*    外側の余白*/
+    margin-bottom: 20px;
+}
+
+h3 {
+/*    ボーダー*/
+    border-left: 8px solid #f00;
+/*    内側の余白*/
+    padding-left: 5px;
+	padding-top: 3px;
+/*    フォントの太さ*/
+    font-weight: bolder;
+}
+
+
+/*header*/
+
+header {
+/*    背景画像*/
+    background: url(../img/headerBg.jpg) no-repeat;
+/*    縦幅*/
+    height: 250px;
+}
+
+header h1 {
+/*    背景画像*/
+    background: url(../img/logomark.png) no-repeat 20px 20px;
+/*    縦幅*/
+    height: 60px;
+/*    行の高さ*/
+    line-height: 60px;
+/*    内側の余白*/
+    padding: 20px 0px 0px 85px;
+/*    フォントカラー*/
+    color: #f00;
+/*    フォントの太さ*/
+    font-weight: bold;
+}
+
+header p {
+/*    内側の余白*/
+    padding-left: 85px;
+/*	  フォントカラー*/
+	color: #333;
+/*    フォントサイズ*/
+    font-size: 20px;
+/*    行の高さ*/
+    line-height: 1.5;
+}
+
+
+/*nav*/
+
+nav ul {
+/*    横幅*/
+    width: 200px;
+}
+
+nav li {
+/*    縦幅*/
+    height: 44px;
+/*    行の高さ*/
+    line-height: 44px;
+/*    外側の余白*/
+    margin-bottom: 5px;
+}
+
+nav li:last-child {
+/*    外側の余白*/
+    margin-bottom: 0;
+}
+
+nav a {
+/*    ブロック化*/
+    display: block;
+/*    背景色*/
+    background: url(../img/buttonBg.jpg) repeat-x left bottom;
+/*    フォントカラー*/
+    color: #fff;
+/*    フォントの太さ*/
+    font-weight: lighter;
+/*    テキストを中央揃えに*/
+    text-align: center;
+}
+
+nav a:hover {
+/*    背景画像*/
+    background: url(../img/buttonBg.jpg) repeat-x;
+/*	相殺により書かなくてよい*/
+}
+
+
+/*.information*/
+
+.information h2 {
+/*    背景色*/
+    background: #f00;
+/*    内側の余白*/
+    padding: 5px;
+/*    フォントカラー*/
+    color: #fff;
+/*    フォントの太さ*/
+    font-weight: bolder;
+}
+
+
+/*.equipment*/
+
+.equipment img {
+/*    float*/
+    float: left;
+/*    内側の余白*/
+    padding-right: 20px;
+}
+
+.toDetail {
+/*    clear*/
+    clear: both;
+}
+
+.equipment p {
+/*    行の高さ*/
+    line-height: 1.5;
+}
+
+.toDetail a {
+/*    ブロックか*/
+	display: block;
+/*    背景色*/
+    background: #f00 url(../img/shosai_arr.png) no-repeat 5px center;
+/*    内側の余白*/
+    padding: 5px 5px 5px 25px;
+/*    横幅*/
+    width: 85px;
+/*    外側の余白*/
+    margin: 0 0 30px auto;
+/*    フォントカラー*/
+    color: #fff;
+}
+
+.toDetail a:hover {
+/*	 背景色*/
+	background-color: #d00;
+}
+
+
+/*.notice*/
+
+.notice dl {
+/*    外側の余白*/
+    margin-bottom: 35px;
+}
+
+.notice dt{
+/*    外側の余白*/
+    margin-bottom: 5px;
+}
+
+.notice dd {
+/*    外側の余白*/
+    margin: 0px 0px 15px 15px;
+}
+
+.notice a {
+/*    下線をつける*/
+    text-decoration: underline;
+}
+
+dl dd:last-of-type {
+	
+}
+
+
+
+/*footer*/
+
+footer {
+/*    内側の余白*/
+    padding: 30px;
+/*    背景色*/
+    background: #f00;
+/*    フォントカラー*/
+    color: #fff;
+/*    フォントの太さ*/
+    font-weight: lighter;
+/*	テキストのスペースをとる*/
+	letter-spacing: 2px;
+/*    テキストを中央揃え*/
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>PETSHOP：ペット屋</title>
+	<meta name="description" content="あらゆるペットと出会えます。是非ご相談下さい。"> 
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="shortcut icon" href="favicon.ico"  type="image/vnd.microsoft.ico">
+</head>
+
+<body>
+
+	<div class="container">
+		<header>
+			<h1>PETSHOP：ペット屋</h1>
+			<p>あらゆるペットと出会えます。是非ご相談下さい。</p>
+			<div class="btn" id="btn">
+				<span></span>
+			</div>
+			<!-- /.btn -->
+		</header>
+
+		<main class="main">
+			<nav id="nav">
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">DOG</a></li>
+					<li><a href="#">CAT</a></li>
+					<li><a href="#">その他のペット</a></li>
+					<li><a href="#">お問合せ</a></li>
+				</ul>
+			</nav>
+			<p class="keyVisual"><img src="img/animal2.jpg" alt="ペット紹介の画像"></p>
+		</main>
+
+		<footer>
+			<p><small>Copyright &copy; PETSHOP:ペット屋 All rights reserved.</small></p>
+		</footer>
+		
+	</div>
+	
+	<!-- library_src
+	------------------------------------------->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+	<!-- script
+	------------------------------------------->
+	<script>
+		
+		$(function() {
+			
+			$('#btn').on('click', function() {
+				
+				// ハンバーガーボタンを変形アニメーション
+				$(this).toggleClass('close');
+				
+				// ナビゲーションをスライド
+				$('#nav').slideToggle('300');
+				
+			});
+			
+		});
+		
+	</script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

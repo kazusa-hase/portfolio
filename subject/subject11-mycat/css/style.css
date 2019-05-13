@@ -1,0 +1,307 @@
+@charset "utf-8";
+
+/*reset
+------------------------------------------------*/
+html, body, h1, h2, h3, p, ul, li, dl, dt, dd, table,  tr ,th, td {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+/*body
+-----------------------------------------------*/
+body {
+    background: #fbf9cb url(../img/bg-stripe01.png) repeat-x; 
+    line-height: 1.5;
+}
+
+/*.container
+-----------------------------------------------*/
+.container {
+    width: 960px;
+    margin: 40px auto;
+    padding: 65px 80px;
+    border: 2px solid #f6bb9e;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+/*.header
+-----------------------------------------------*/
+.header {
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin-bottom: 25px;
+    color: #6fba9a;
+    font-size: 40px;
+    text-align: center;
+}
+
+.header span {
+    color: #cfe35b;
+}
+
+.header>p {
+    padding: 15px;
+    border-top: 2px dotted #6fba9a;
+    border-bottom: 2px dotted #6fba9a;
+    text-align: center;
+}
+
+/*.main
+----------------------------------------------*/
+.main h2 {
+    margin-bottom: 15px;
+    padding: 5px 20px;
+    border: 2px dotted #6fba9a;
+    border-left: 10px solid #cfe35b;
+    color: #6fba9a;
+}
+
+dt, dd {
+    display: inline-block;
+}
+
+dt {
+    font-weight: bold;
+}
+
+/*.gnav
+----------------------------------------------*/
+.gnav {
+    margin: 0 0 20px 40px;
+}
+
+.gnav a {
+    color: #df4839;
+}
+
+.gnav a:hover {
+    color: #b14035;
+}
+
+/*.introduction-cats
+----------------------------------------------*/
+.introduction-cats {
+    margin-bottom: 20px;
+}
+
+.cat {
+    margin-bottom: 20px;
+    padding: 60px 30px;
+    background: #fbf9cb url(../img/bg-stripe02.png) repeat-x;
+}
+
+.cat>h3 {
+    margin-bottom: 20px;
+}
+
+.cat>h3>span {
+    color: #df972f;
+    font-weight: lighter;
+}
+
+.cat:first-of-type>h3>span {
+    color: #2693a7;
+}
+
+.cat>p:first-of-type {
+    line-height: 1.5;
+}
+
+.cat>.wrap>.catImage {
+    padding: 20px 0;
+}
+
+.cat:first-of-type .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cat1 dl {
+    margin-right: 70px;
+    width: 320px;
+}
+
+.cat2 dl {
+    width: 360px;
+    margin-bottom: 20px;
+}
+
+.cat3 dl {
+    width: 450px;
+    margin-bottom: 20px;
+}
+
+.cat3 dl>dd {
+    width: 400px;
+}
+
+.cat .more {
+    padding-right: 15px;
+    background: url(../img/icon-arw01.png) no-repeat right center;
+    text-align: right;
+    line-height: 15px;
+}
+
+.cat:first-of-type .more {
+    margin-top: -10px;
+}
+
+.cat a {
+    color: #df4839;
+}
+
+.cat a:hover {
+    color: #b14035;
+}
+
+
+/*.introduction-owner
+-------------------------------------------------*/
+.introduction-owner {
+    margin-bottom: 20px;
+}
+
+.introduction-owner dd {
+    width: 720px;
+}
+
+.introduction-owner a {
+    color: #df4839;
+}
+
+.introduction-owner a:hover {
+    color: #b14035;
+}
+
+/*.post
+------------------------------------------------*/
+
+.post>p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.post>.toPostPage>a {
+    display: block;
+    color: #df4839;
+}
+
+.post>p>a:hover {
+    color: #b14035;
+}
+
+/*.entry
+------------------------------------------------*/
+.entry p {
+    padding: 0;
+    border: none;
+    text-align: left;
+}
+
+.entry table {
+    margin-bottom: 30px;
+    width: 100%;
+    border: 1px solid #f6bb9e;
+    box-sizing: border-box;
+}
+
+.entry th, td {
+    padding: 5px 10px;
+    border: 1px solid #f6bb9e;
+}
+
+.entry th {
+    width: 140px;
+    background: #fee;
+    text-align: left;
+    vertical-align: top;
+}
+
+.entry input[type="text"],
+.entry input[type="email"] {
+    padding: 5px;
+    width:400px;
+    background: #fff;
+    border: #ccc 1px solid;
+    box-sizing: border-box;
+}
+
+.entry textarea {
+    padding: 5px;
+    width:100%;
+    height: 100px;
+    box-sizing: border-box;
+    background: #fff;
+    border: #ccc 1px solid;
+}
+
+label,
+input[type="radio"],
+input[type="checkbox"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.button {
+    width: 100px;
+    height: 44px;
+    font-size: 16px;
+}
+
+.button-clear {
+    margin-right: 20px;
+    background: #ccc;
+}
+
+.button-send {
+    background: #f6bb9e;
+}
+
+.button:hover {
+    opacity: 0.7;
+}
+
+.button:active {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

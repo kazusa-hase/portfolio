@@ -1,0 +1,25 @@
+
+.meal-course-body {
+
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px 10px 15px 10px;
+  box-sizing: border-box;
+
+  @include media-sp() {
+    padding: size(18) size(18) size(26) size(18);
+  }
+
+  // コースのサムネイル画像
+  @import "./section-body-thumb/_section-body-thumb.scss";
+
+  // サブタイトル
+  @import "./section-body-sub-title/_section-body-sub-title.scss";
+
+  // コースの魅力を紹介
+  @import "./section-body-point-list/_section-body-point-list.scss";
+
+  // 申し込みボタン
+  @import "./section-body-apply-btn/_section-body-apply-btn.scss";
+  
+}

@@ -1,0 +1,5 @@
+
+@function size($pxs) {
+  $vws: $pxs / 640 * 100vw;
+  @return $vws;
+}

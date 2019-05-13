@@ -1,0 +1,54 @@
+
+.main {
+
+  .section {
+    
+    padding: 10px;
+    background-image: url(/portfolio/study/study02/common/img/section-frame-bg.jpg);
+    
+    // section mbs
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    
+    &-inner-wrap {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      padding: 10px 10px 20px 10px;
+      background-color: #fff;
+    }
+
+    &:nth-of-type(even) .section-inner-wrap {
+      flex-flow: row-reverse wrap;
+    }
+
+    // タイトル
+    @import "../object/project/section/travel-title";
+
+    // ボディコンテンツ
+    &-body-content {
+
+      width: 670px - 10px - 240px;
+      margin-bottom: 20px;
+  
+      // 価格表示
+      @import "../object/project/section/travel-price";
+  
+      // アピールポイント
+      @import "../object/project/section/travel-appeal";
+  
+      // アピールポイントを一覧表示
+      @import "../object/project/section/travel-point";
+
+    }
+
+    // サムネイル
+    @import "../object/project/section/travel-thumb";
+
+    // 申し込みボタン
+    @import "../object/project/section/travel-apply-btn";
+
+  }
+
+}

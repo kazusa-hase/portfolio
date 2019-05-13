@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+/*reset*/
+/*--------------------------------------------------*/
+
+html, body, h1, h2, p, table, tr, th, td, ul, ol, li {
+/*    外側の余白*/
+    margin: 0;
+/*    内側の余白*/
+    padding: 0;
+/*    使用するフォント*/
+    font-family: "游ゴシック", YuGothic, "Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
+/*    フォントの太さ*/
+    font-weight: 500;
+/*    行の高さ*/
+    line-height: 1.0;
+}
+
+table {
+/*    ボーダーの表示形式*/
+    border-collapse: collapse;
+/*    ボーダーの間隔*/
+    border-spacing: 0;
+}
+
+nav ul {
+	list-style: none;
+}
+
+a {
+/*    中黒の非表示*/
+    text-decoration: none;
+	color: inherit;
+}
+
+img {
+/*    テキストや画像の縦方向の揃え位置*/
+    vertical-align: bottom;
+/*    ボーダーの非表示（リンク時に青いボーダーが付くのを防ぐため）*/
+    border: none;
+}
+
+
+/*css*/
+/*--------------------------------------------------*/
+
+
+/*body*/
+
+body {
+/*    背景画像*/
+    background-image: url(../img/asari_bg.jpg);
+}
+
+
+/*container*/
+
+.container {
+/*    バックグラウンドカラー*/
+    background: #fea;
+/*    横幅*/
+    width: 800px;
+/*    内側の余白*/
+    padding: 30px;
+/*    外側の余白*/
+/*    横幅をもつblock要素をウィンドウの真名に寄せる*/
+    margin: 0 auto;
+}
+
+
+/*h1以下共通*/
+
+h1, h2, th, td {
+/* 内側の共通余白*/
+/* ボーダーと背景色があるときは必ず記述する*/
+    padding: 5px;
+}
+
+p, table, ul, ol {
+/*    外側の余白*/
+    margin-bottom: 30px;
+}
+
+/*headder*/
+
+h1 {
+/*    バックグラウンドカラー*/
+    background: #f80;
+/*    フォントカラー*/
+    color: #fff;
+/*    テキストを中央揃え*/
+    text-align: center;
+/*    外側の余白*/
+    margin-bottom: 20px;
+}
+
+.mainImg {
+	width: 400px;
+	float: left;
+	margin: 0 20px 20px 0;
+/*    バックグラウンドカラー*/
+/*    background: url(../img/asari_bg.jpg) repeat-x;*/
+/*    画像（テキスト）を中央揃え*/
+    text-align: center;
+}
+
+
+
+nav {
+	clear: both;
+}
+
+nav ul {
+	overflow: hidden;
+	padding: 0;
+}
+
+nav li {
+	text-align: center;
+	font-size: 14px;
+}
+
+nav a {
+	display: block;
+	float: left;
+	width: calc(800px/5);
+	height: 44px;
+	line-height: 44px;
+	border: 1px solid #f80 ;
+	box-sizing: border-box;
+	background: #fd9;
+	color: #f80;
+}
+
+nav a:hover {
+	background: #f80;
+	color: #fff;
+}
+
+
+
+.box {
+	overflow: hidden;
+}
+
+.ingrediexts {
+	width: 390px;
+	float: left;
+}
+
+.point {
+	width: 390px;
+	float: right;
+}
+
+
+
+.catch {
+/*    フォントカラー*/
+    color: #900;
+/*    フォントの太さ*/
+    font-weight: bold;
+/*    テキストを見やすくする（行の高さ）*/
+    line-height: 1.5;
+}
+
+
+/*h2〜*/
+
+h2 {
+/*    バックグラウンドカラー*/
+    background: #f80;
+/*    フォントカラー*/
+    color: #fff;
+/*    フォントサイズ*/
+    font-size: 16px;
+/*    外側の余白*/
+    margin-bottom: 20px;
+}
+
+
+/*table*/
+
+th, td {
+/*    ボーダー*/
+    border: 1.5px solid #f80;
+}
+
+th {
+/*    バックグラウンドカラー*/
+    background: #eee;
+/*    フォントカラー*/
+    color: #900;
+}
+
+td {
+/*    バックグラウンドカラー*/
+    background: #fff;
+}
+
+
+/*list*/
+
+ul, ol {
+/*    内側の余白*/
+    padding-left: 40px; 
+}
+
+li {   
+/*    行の高さ*/
+    line-height: 1.4;
+/*    リストの間隔*/
+    margin-bottom: 10px;
+/*    フォントの太さ*/
+    font-weight: 600;
+}
+
+nav li {
+	margin: 0;
+}
+
+
+/*内部参照*/
+
+.pagetop {
+/*    テキストを右揃え*/
+    text-align: right;
+/*    ボーダー*/
+    border-top: 1.5px solid #aaa;
+/*    内側の余白*/
+    padding-top: 5px;
+}
+
+.pagetop a {
+/*    フォントカラー*/
+    color: #777;
+}
+
+
+/*footer*/
+
+footer {
+/*    テキストを中央揃え*/
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

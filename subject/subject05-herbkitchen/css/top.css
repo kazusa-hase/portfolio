@@ -1,0 +1,412 @@
+@charset "utf-8";
+
+/*reset
+------------------------------------------*/
+html, body, h1, h2, p, ul, li {
+	margin: 0;
+	padding: 0;
+	font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	font-weight: 500;
+	line-height: 1.0;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+img {
+	max-width: 100%;
+	vertical-align: bottom;
+	border: none;
+}
+
+
+/*layout
+------------------------------------------*/
+.wrap {
+	overflow: hidden;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/*body
+------------------------------------------*/
+body {
+	background: url(../img/top-header.jpg) repeat-x center top;
+}
+
+/*media query -body
+----------------------------*/
+@media (max-width: 767px) {
+	body {
+		background-size: auto 120px;
+	}
+}
+
+
+/*.header
+------------------------------------------*/
+.header {
+	background: url(../img/logo.png) no-repeat center 40px;
+	text-align: center;
+}
+.header h1 {
+	height: 300px;
+	color: #fff;
+	font-size: 500%;
+	padding-top: 170px;
+	box-sizing: border-box;
+	font-family: 'Berkshire Swash', cursive;
+	text-shadow: 3px 3px 5px #000;
+}
+.header p {
+	color: #5d743e;
+	font-weight: bolder;
+	font-size: 26px;
+	padding: 40px 0;
+}
+
+/*media query -header
+----------------------------*/
+@media (max-width: 767px) {
+	.header {
+		height: 120px;
+		background-size: auto 35px;
+		background-position: center top 10px;
+		margin-bottom: 36px
+	}
+	.header h1 {
+		height: auto;
+		color: #fff;
+		font-size: 300%;
+		margin-bottom: 20px;
+		padding-top: 50px;
+	}
+	.header p {
+		background: #fff;
+		font-size: 16px;
+		padding: 10px 0;
+		line-height: 1.2;
+	}
+}
+
+@media (max-width: 424px) {
+	.header p {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 374px) {
+	.header p {
+		font-size: 12px;
+	}
+}
+
+
+/*.gnav
+------------------------------------------*/
+/* menu button*/
+
+#menuBtn>i {
+	display: none;
+}
+
+/* nav*/
+
+.gnav {
+	margin-bottom: 20px;
+}
+.gnav li {
+	color: #888;
+	text-align: center;
+}
+.gnav a {
+	float: left;
+	width: calc(100%/5);
+	padding: 10px 0;
+	box-sizing: border-box;
+}
+.gnav a:hover {
+	text-decoration: underline;
+	text-decoration-color: #888;
+}
+
+/*media query -nav
+----------------------------*/
+@media (max-width: 767px) {
+/*  menu button*/
+	#menuBtn>i {
+		display: block;
+		height: 50px;
+		border: 2px solid #0EB414;
+		color: #80BA3A;
+		background: linear-gradient(#fff, #BDFFBD);
+		line-height: 54px;
+		text-align: center;
+		font-size: 32px;
+	}
+	
+/*	nav*/
+	.gnav {
+		display: none;
+		position: absolute;
+		width: 100%;
+		margin-bottom: 0;
+	}
+	.gnav a {
+		float: none;
+		display: block;
+		width: 100%;
+		padding: 0;
+		border-bottom: 2px solid #ccc;
+		background: rgba(255, 255, 255, 0.8);
+		font-weight: bolder;
+		line-height: 50px;
+	}
+	.gnav>li:last-child>a {
+		border-bottom: none;
+	}
+}
+
+
+/* コンテンツナビゲーション
+------------------------------------------*/
+/* 背景色*/
+.content {
+	margin-bottom: 100px;
+	background: #8fc320;
+}
+
+/* font-icon awesome*/
+
+.wrap .icon {
+	display: block;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin: 50px auto 5px;
+	box-sizing: border-box;
+	background: #fff;
+	color: #40680f;
+	font-size: 80px;
+	text-align: center;
+	line-height: 150px;
+	text-shadow: none;
+}
+.wrap .fas {
+	font-size: 75px;
+}
+
+/* コンテンツ*/
+
+.section a {
+	display: block;
+	float: left;
+	width: calc(100%/3);
+	padding: 20px;
+	box-sizing: border-box;
+	color: #fff;
+	text-align: center;
+}
+.section h2 {
+	padding: 20px 0;
+	font-weight: bolder;
+	text-shadow: 2px 2px 2px #000;
+}
+.section p:last-of-type {
+	margin-bottom: 50px;
+	line-height: 1.5;
+	text-align: left;
+}
+.section a:hover {
+	background: #40680f;
+	color: #eee;
+}
+
+/*media query -content nav
+----------------------------*/
+@media (max-width: 767px) {
+	.content {
+		margin-bottom: 30px;
+	}
+	.section a {
+		float: none;
+		width: 90%;
+		max-width: 400px;
+		margin: 0 auto;
+		padding: 0px;
+	}
+	.section h2 {
+		padding: 10px 0;
+	}
+}
+
+
+/* レシピ紹介
+------------------------------------------*/
+.introTitle {
+	color: #aaa;
+	line-height: 1.0;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* wrapper*/
+
+.recipeWrap {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px
+}
+.recipeWrap>a {
+	display: block;
+	overflow: hidden;
+}
+.recipeWrap>a:hover {
+	background: #D9FFD2;
+}
+
+/* コンテンツ*/
+
+.recipe {
+	padding: 20px;
+	box-sizing: border-box;
+}
+.recipeName {
+	margin: 0;
+	padding: 30px 0 20px;
+	color: #5d743e;
+	line-height: 1.0;
+	text-align: center;
+	font-weight: bold;
+}
+.recipeImage {
+	width: 100%;
+	height: 181px;
+}
+p.catch {
+	margin-bottom: 20px;
+	line-height: 1.5;
+}
+.more {
+	float: right;
+	width: 80px;
+	margin-bottom: 20px;
+	padding: 7px 5px 5px 20px;
+	background: #FF2525 url(../img/mark.png) no-repeat 5px center;
+	color: #fff;
+}
+
+/*media query -intro recepi
+----------------------------*/
+@media (max-width: 767px) {
+	.introTitle {
+		margin-bottom: 20px;
+	}
+	
+	/* wrapper*/
+	.recipeWrap {
+		display: block;
+		margin-bottom: 30px
+	}
+	
+	/* コンテンツ*/
+	.recipe {
+		width: 90%;
+		max-width: 440px;
+		margin: 0 auto;
+		padding: 0;
+		text-align: center;
+	}
+	.recipeName {
+		margin: 0;
+		padding: 10px 0;
+	}
+	.recipeImage {
+		width: 240px;
+		height: 150px;
+		margin-bottom: 10px;
+	}
+	p.catch {
+		margin-bottom: 10px;
+		text-align: left;
+	}
+	.more {
+		margin-bottom: 15px;
+	}
+}
+
+
+/* アクセス
+-----------------------------------------*/
+.tenpo {
+	margin-bottom: 50px;
+}
+.tenpo>h2 {
+	margin-bottom: 50px;
+	color: #aaa;
+	line-height: 1.0;
+	text-align: center;
+	font-weight: bold;
+}
+.tenpo>.map {
+	overflow: hidden;
+	position: relative;
+	height: 0;
+	padding-bottom: 60%;
+	background: #eee;
+}
+.tenpo>.map>iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+/*media query -アクセス
+----------------------------*/
+@media (max-width: 767px) {
+	.tenpo {
+		margin-bottom: 0;
+	}
+	.tenpo>h2 {
+		margin-bottom: 15px;
+	}
+}
+
+
+/* スクロールボタン
+------------------------------------------*/
+#scrollBtn {
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	display: block;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: #FF6C2A;
+	color: #fff;
+	font-size: 18px;
+	line-height: 44px;
+	text-align: center;
+}
+
+
+/*.footer
+------------------------------------------*/
+.footer {
+	padding: 30px;
+	color: #555;
+	text-align: center;
+}
+
+
+
+
+
+

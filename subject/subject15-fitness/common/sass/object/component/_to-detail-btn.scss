@@ -1,0 +1,24 @@
+
+@mixin to-detail-btn() {
+
+  display: inline-block;
+  @content;
+  
+  & > a {
+
+    display: block;
+    padding: 10px 30px;
+    border-radius: 4px;
+    background-color: $key-color-01;
+    color: #fff;
+    transition: .3s color, .3s background-color;
+
+    &:hover {
+      color: $key-color-01;
+      background-color: $key-color-02;
+    }
+
+  }
+
+}
+

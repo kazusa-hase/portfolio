@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>PICKUPSTREAM</title>
+		<meta name="description" content="海岸のデコレーション　海岸には砂や貝殻しかないように思ってしまいますが、よく見ると草花も生えていることがわかります。ただし、海水や潮風、強い日差しなどの影響で、大きく育つものは見当たりません。その多くは小さく、地を這って伸びています。こうした植物は「海浜植物」と呼ばれ、砂をかぶって埋もれても、茎が伸びてまた葉を出す仕組みになっています。ところどころに顔を出す緑色の小さな葉っぱは、海岸をかわいくデコレーションしてくれます。海への道中で踏んづけてしまう前に、足元にあるものを観察してみるのもおもしろいですよ。">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+
+	</head>
+	<body>
+		<div class="container">
+		
+			<header class="header">
+				<h1><a href="#"><img src="/img/logo-1.png" alt="PICKUPSTREAM"></a></h1>
+				
+				<nav class="gnav" id="headerNav">
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">INFOMATION</a></li>
+					<li><a href="#">BLOG</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+				</nav>
+				
+				<div id="menuBtn"><span></span></div>
+				
+				<p class ="keyVisual"><img src="img/header.jpg" alt="KeyImage"></p>
+			</header>
+			
+			<div class="wrap">
+			
+				<article>
+					<h2>海岸のデコレーション</h2>
+					<p>海岸には砂や貝殻しかないように思ってしまいますが、よく見ると草花も生えていることがわかります。ただし、海水や潮風、強い日差しなどの影響で、大きく育つものは見当たりません。その多くは小さく、地を這って伸びています。</p>
+					<p><img src="img/plant.jpg" alt="海浜植物の画像"></p>
+					<p>こうした植物は「海浜植物」と呼ばれ、砂をかぶって埋もれても、茎が伸びてまた葉を出す仕組みになっています。</p>
+					<p>ところどころに顔を出す緑色の小さな葉っぱは、海岸をかわいくデコレーションしてくれます。海への道中で踏んづけてしまう前に、足元にあるものを観察してみるのもおもしろいですよ。</p>
+				</article>
+			
+				<div class="sidebar">
+					<h2>Category Menu</h2>
+					<ul>
+						<li><a href="#">山と森林</a></li>
+						<li><a href="#">海と海岸</a></li>
+						<li><a href="#">都市と建築</a></li>
+						<li><a href="#">地上と地下</a></li>
+					</ul>
+					<p><img src="/img/herb.jpg" alt=""></p>
+				</div>
+				<!-- /.sidebar -->
+				
+			</div>
+			<!-- /.wrap -->
+			
+			<footer class="footer">
+			<p>Pickupstreambr</p>
+			<p><small>Copyright &copy; Pickupstream, all rights reserved.</small></p>
+			</footer>
+			
+		</div>
+		<!-- /.container -->
+		
+		
+<!--		library src
+	----------------------------------- -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	
+<!--	script
+	----------------------------------- -->
+	<script>
+		$(function() {
+			$('#menuBtn').on('touchend', function() {
+				var $headerNav = $('#headerNav');
+				if ($headerNav.css('display') == 'none') {
+					$headerNav.slideDown();
+				} else {
+					$headerNav.slideUp();
+				}
+			});
+		});	
+	</script>
+		
+		
+	</body>
+</html>
+
+
+
+
+
+
+
+

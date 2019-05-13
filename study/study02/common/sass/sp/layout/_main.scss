@@ -1,0 +1,40 @@
+
+.main {
+
+  .section {
+    
+    &-inner-wrap {
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    // タイトル
+    @import "../object/project/section/_travel-title.scss";
+
+    // ボディコンテンツ
+    &-body-content {
+
+      order: 3;
+      margin-bottom: vws(40);
+      padding: 0 vws(20);
+  
+      // 価格表示
+      @import "../object/project/section/_travel-price.scss";
+  
+      // アピールポイント
+      @import "../object/project/section/_travel-appeal.scss";
+  
+      // アピールポイントを一覧表示
+      @import "../object/project/section/_travel-point.scss";
+
+    }
+
+    // サムネイル
+    @import "../object/project/section/_travel-thumb.scss";
+
+    // 申し込みボタン
+    @import "../object/project/section/_travel-apply-btn.scss";
+
+  }
+
+}

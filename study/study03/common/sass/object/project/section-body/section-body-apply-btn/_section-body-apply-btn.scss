@@ -1,0 +1,108 @@
+
+.aplly-btn {
+
+  $btn-width: 248px;
+  $btn-height: 38px;
+
+  width: $btn-width;
+  height: $btn-height;
+  margin: 0 auto;
+  
+  & > a {
+    
+    position: relative;
+    display: block;
+    width: $btn-width;
+    height: $btn-height;
+    padding: 11px 40px 9px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 1px #{$key-color-01};
+    border-radius: 5px;
+    content: "";
+    background-color: $key-color-01;
+    color: #fff;
+    font-size: 18px;
+    transition: .3s opacity;
+
+    $arrow-width: 5px;
+    $arrow-height: 10px;
+    $arrow-top: 8px;
+    $arrow-right: 36px;
+    
+    &::before {
+      position: absolute;
+      top: $arrow-top;
+      right: $arrow-right;
+      z-index: 2;
+      display: block;
+      width: $arrow-width;
+      height: $arrow-height;
+      content: "";
+      background-color: #fff;
+      transform: skewX(45deg);
+    }
+    
+    &::after {
+      position: absolute;
+      top: ($arrow-top + $arrow-height);
+      right: $arrow-right;
+      z-index: 2;
+      display: block;
+      width: $arrow-width;
+      height: $arrow-height;
+      content: "";
+      background-color: #fff;
+      transform: skewX(-45deg);
+    }
+    
+    &:hover {
+      opacity: .7;
+    }
+    
+  }
+  
+  @include media-sp() {
+    
+    $btn-width: size(442);
+    $btn-height: size(70);
+    
+    width: $btn-width;
+    height: $btn-height;
+    
+    & > a {
+
+      width: $btn-width;
+      height: $btn-height;
+      padding: size(20) size(110) size(20) size(72);
+      border: size(1) solid #fff;
+      box-shadow: 0 0 0 size(1) #{$key-color-01};
+      border-radius: size(10);
+      font-size: size(32);
+
+      $arrow-width: size(10);
+      $arrow-height: size(18);
+      $arrow-top: ($btn-height / 2 - $arrow-height);
+      $arrow-right: size(60);
+      
+      &::before {
+        top: $arrow-top;
+        right: $arrow-right;
+        width: $arrow-width;
+        height: $arrow-height;
+        transform: skewX(40deg);
+      }
+      
+      &::after {
+        top: ($arrow-top + $arrow-height);
+        right: $arrow-right;
+        width: $arrow-width;
+        height: $arrow-height;
+        transform: skewX(-40deg);
+      }
+      
+    }
+
+  }
+
+}

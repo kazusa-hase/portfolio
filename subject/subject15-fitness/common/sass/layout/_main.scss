@@ -1,0 +1,17 @@
+
+.main {
+  
+  // Welcom
+  @import "../object/project/section-welcome/_section-welcome.scss";
+
+  // Training list
+  @import "../object/project/training-plan-list/_training-plan-list.scss";
+
+  // Corche list
+  @import "../object/project/section-corche-list/_section-corche-list.scss";
+
+  // Member voice list
+  @import "../object/project/section-member-voice-list/_section-member-voice-list.scss";
+
+
+}

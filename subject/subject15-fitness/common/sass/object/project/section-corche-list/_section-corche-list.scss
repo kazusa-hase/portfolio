@@ -1,0 +1,169 @@
+
+.section-corche-list {
+
+  padding: 100px 0;
+  text-align: center;
+  
+  @include media-sp() {
+    padding: 30px 0;
+  }
+
+
+  // 見出し
+  .section-corche-list-title {
+
+    margin-bottom: 70px;
+    
+    @include media-sp() {
+      margin-bottom: 20px;
+    }
+
+  }
+  
+  // リスト
+  .corche-list {
+
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 70px;
+    
+    @include media-sp() {
+      margin-bottom: 30px;
+    }
+
+
+    .corche-list-item {
+      
+      overflow: hidden;
+      position: relative;
+      flex: 1 0 calc(20%);
+      
+      @include media-pc() {
+
+        flex: 1 0 calc(40%);
+
+        &:nth-child(even) {
+          margin-left: 10px;
+        }
+
+        &:not(:nth-child(-n + 2)) {
+          margin-top: 30px;
+        }
+
+      }
+
+
+      & + li {
+
+        margin-left: 20px;
+
+        @include media-pc() {
+          margin-left: 0;
+        }
+
+      }
+
+      .corche-thumb {
+        margin-bottom: 16px;
+      }
+
+      .corche-name {
+
+        margin-bottom: 16px;
+        font-weight: bold;
+
+        & > span {
+          color: #f00;
+        }
+
+      }
+
+      .corche-profiel {
+        text-align: left;
+        line-height: 1.5;
+      }
+
+      &:hover .sns-icons-out-wrapper {
+
+        opacity: 1;
+        transform: translateY(-80px);
+        
+        @include media-pc() {
+          transform: translateY(0);
+        }
+
+      }
+
+      .sns-icons-out-wrapper {
+        
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding-top: 100%;
+        padding-bottom: 32%;
+        background-color: rgba(#fff, 0.5);
+        opacity: 0;
+        transition: .3s opacity, .3s transform;
+
+        @include media-pc() {
+          position: static;
+          opacity: 1;
+          padding: 0;
+        }
+
+        
+        .sns-icons {
+          
+          position: absolute;
+          top: 0;
+          width: 100%;
+          padding-top: 75%;
+
+          @include media-pc() {
+            position: static;
+            margin-top: 20px; 
+            padding: 0;
+          }
+
+          
+          .fb, .tw {
+  
+            $padding-size: 8px;
+            $font-size: 32px;
+  
+            width: $font-size;
+            padding: $padding-size;
+            border-radius: 50%;
+            color: #fff;
+            font-size: $font-size;
+            text-align: right;
+  
+          }
+          
+          .fb {
+            margin-right: 20px;
+            padding-left: 4px;
+            padding-right: 12px;
+            background-color: #3b589e;
+          }
+  
+          .tw {
+            background-color: #18a1f8;
+          }
+  
+        }
+
+      }
+
+    }
+
+  }
+
+  // 詳細ボタン
+  .to-detail-btn {
+    @import "../../component/_to-detail-btn.scss";
+    @include to-detail-btn();
+  }
+
+}

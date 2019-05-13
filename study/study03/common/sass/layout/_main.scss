@@ -1,0 +1,18 @@
+
+.main {
+
+  display: flex;
+  flex-flow: row wrap;
+  padding: 16px 10px 32px;
+  box-sizing: border-box;
+  background-color: $base-color-01;
+  
+  @include media-sp() {
+    display: block;
+    padding: size(28) size(20) size(70);
+  }
+
+  // section
+  @import "../object/project/_section.scss";
+
+}

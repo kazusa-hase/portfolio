@@ -1,0 +1,453 @@
+@charset "UTF-8";
+html, body, h1, h2, h3, p, ul, li, dl, dt, dd {
+  line-height: 1.0;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  border: none;
+  vertical-align: bottom;
+  width: 100%;
+}
+
+.body {
+  background: #fff;
+  color: #333;
+  font-family: Meiryo, 'メイリオ', -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+.container {
+  margin: auto;
+  width: 710px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.header {
+  background-color: #edeae5;
+}
+
+.main {
+  -ms-flex-flow: row wrap;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-box-sizing: border-box;
+  background-color: #edeae5;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 16px 10px 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    display: block;
+    padding: 4.375vw 3.125vw 10.9375vw;
+  }
+}
+
+.main .meal-course {
+  -webkit-box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  width: calc(50% - 5px);
+}
+
+.main .meal-course:nth-child(even) {
+  margin-left: 10px;
+}
+
+.main .meal-course:not(:nth-child(-n + 2)) {
+  margin-top: 22px;
+}
+
+@media screen and (max-width: 767px) {
+  .main .meal-course {
+    width: 100%;
+  }
+  .main .meal-course:nth-child(even) {
+    margin-left: 0;
+  }
+  .main .meal-course:not(:nth-child(-n + 2)) {
+    margin-top: 0;
+  }
+  .main .meal-course:not(:last-child) {
+    margin-bottom: 4.53125vw;
+  }
+}
+
+.main .meal-course .meal-course-header {
+  background: url(/portfolio/study/study03/common/img/bg-header.png) no-repeat left bottom 1px/340px auto, -webkit-gradient(linear, left top, left bottom, color-stop(90%, #604418), color-stop(10%, #fff));
+  background: url(/portfolio/study/study03/common/img/bg-header.png) no-repeat left bottom 1px/340px auto, -webkit-linear-gradient(#604418 90%, #fff 10%);
+  background: url(/portfolio/study/study03/common/img/bg-header.png) no-repeat left bottom 1px/340px auto, linear-gradient(#604418 90%, #fff 10%);
+  padding: 15px 10px 14px;
+}
+
+@media screen and (max-width: 767px) {
+  .main .meal-course .meal-course-header {
+    background-size: 100% auto;
+    padding: 4.21875vw 2.96875vw 3.90625vw;
+  }
+}
+
+.main .meal-course .meal-course-header .course-name {
+  margin-bottom: 3px;
+}
+
+.main .meal-course .meal-course-header .course-name > a {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.38;
+}
+
+.main .meal-course .meal-course-header .course-name > a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  .main .meal-course .meal-course-header .course-name {
+    margin-bottom: 1.40625vw;
+  }
+  .main .meal-course .meal-course-header .course-name > a {
+    font-size: 5vw;
+    text-decoration: underline;
+  }
+}
+
+.main .meal-course .meal-course-header .course-num-list {
+  -ms-flex-pack: end;
+  -webkit-box-pack: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main .meal-course .meal-course-header .course-num-list > dt {
+  background-color: #f28100;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 4px 4px 0 6px;
+  text-align: center;
+}
+
+.main .meal-course .meal-course-header .course-num-list > dd {
+  background-color: #fff;
+  border: 1px solid #f28100;
+  font-size: 10px;
+  padding: 3px 6px 2px 4px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .main .meal-course .meal-course-header .course-num-list > dt {
+    font-size: 2.8125vw;
+    font-weight: normal;
+    padding: 1.25vw 1.25vw 0.9375vw 1.5625vw;
+  }
+  .main .meal-course .meal-course-header .course-num-list > dd {
+    border-width: 0.15625vw;
+    font-size: 2.8125vw;
+    font-weight: normal;
+    padding: 1.09375vw 1.09375vw 0.78125vw 1.40625vw;
+  }
+}
+
+.main .meal-course .meal-course-body {
+  -ms-flex-flow: row wrap;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px 10px 15px 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .main .meal-course .meal-course-body {
+    padding: 2.8125vw 2.8125vw 4.0625vw 2.8125vw;
+  }
+}
+
+.main .meal-course .meal-course-body .meal-thum {
+  -ms-flex-align: start;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.main .meal-course .meal-course-body .meal-thum > span + span {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .main .meal-course .meal-course-body .meal-thum > span {
+    -ms-flex: 1 0 1px;
+    -webkit-box-flex: 1;
+    flex: 1 0 1px;
+  }
+  .main .meal-course .meal-course-body .meal-thum > span + span {
+    margin-left: 3.125vw;
+  }
+}
+
+.main .meal-course .meal-course-body .course-point-sub-title {
+  height: 22px;
+  position: relative;
+  width: 100%;
+}
+
+.main .meal-course .meal-course-body .course-point-sub-title > img {
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 6px;
+  width: 151px;
+}
+
+@media screen and (max-width: 767px) {
+  .main .meal-course .meal-course-body .course-point-sub-title {
+    height: 6.09375vw;
+  }
+  .main .meal-course .meal-course-body .course-point-sub-title > img {
+    top: 1.71875vw;
+    width: 41.5625vw;
+  }
+}
+
+.main .meal-course .meal-course-body .course-point-list {
+  -webkit-box-sizing: border-box;
+  background-color: #f2eada;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  padding: 17px 0 13px;
+  width: 100%;
+}
+
+.main .meal-course .meal-course-body .course-point-list > li {
+  background: url(/portfolio/study/study03/common/img/dt-mark.png) no-repeat left 10px top 0px/13px 15px;
+  line-height: 1.1;
+  padding: 0 11px 0 30px;
+}
+
+.main .meal-course .meal-course-body .course-point-list > li:not(:first-of-type) {
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .main .meal-course .meal-course-body .course-point-list {
+    margin-bottom: 3.125vw;
+    padding: 5vw 0 3.125vw;
+  }
+  .main .meal-course .meal-course-body .course-point-list > li {
+    background-position: left 2.8125vw top 0;
+    background-size: 3.59375vw 4.21875vw;
+    font-size: 4.375vw;
+    padding: 0 3.125vw 0 8.28125vw;
+  }
+  .main .meal-course .meal-course-body .course-point-list > li:not(:first-of-type) {
+    margin-top: 2.5vw;
+  }
+}
+
+.main .meal-course .meal-course-body .aplly-btn {
+  height: 38px;
+  margin: 0 auto;
+  width: 248px;
+}
+
+.main .meal-course .meal-course-body .aplly-btn > a {
+  -webkit-box-shadow: 0 0 0 1px #f28100;
+  -webkit-box-sizing: border-box;
+  -webkit-transition: .3s opacity;
+  background-color: #f28100;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #f28100;
+  box-sizing: border-box;
+  color: #fff;
+  content: "";
+  display: block;
+  font-size: 18px;
+  height: 38px;
+  padding: 11px 40px 9px;
+  position: relative;
+  transition: .3s opacity;
+  width: 248px;
+}
+
+.main .meal-course .meal-course-body .aplly-btn > a::before {
+  -webkit-transform: skewX(45deg);
+  background-color: #fff;
+  content: "";
+  display: block;
+  height: 10px;
+  position: absolute;
+  right: 36px;
+  top: 8px;
+  transform: skewX(45deg);
+  width: 5px;
+  z-index: 2;
+}
+
+.main .meal-course .meal-course-body .aplly-btn > a::after {
+  -webkit-transform: skewX(-45deg);
+  background-color: #fff;
+  content: "";
+  display: block;
+  height: 10px;
+  position: absolute;
+  right: 36px;
+  top: 18px;
+  transform: skewX(-45deg);
+  width: 5px;
+  z-index: 2;
+}
+
+.main .meal-course .meal-course-body .aplly-btn > a:hover {
+  opacity: .7;
+}
+
+@media screen and (max-width: 767px) {
+  .main .meal-course .meal-course-body .aplly-btn {
+    height: 10.9375vw;
+    width: 69.0625vw;
+  }
+  .main .meal-course .meal-course-body .aplly-btn > a {
+    -webkit-box-shadow: 0 0 0 0.15625vw #f28100;
+    border: 0.15625vw solid #fff;
+    border-radius: 1.5625vw;
+    box-shadow: 0 0 0 0.15625vw #f28100;
+    font-size: 5vw;
+    height: 10.9375vw;
+    padding: 3.125vw 17.1875vw 3.125vw 11.25vw;
+    width: 69.0625vw;
+  }
+  .main .meal-course .meal-course-body .aplly-btn > a::before {
+    -webkit-transform: skewX(40deg);
+    height: 2.8125vw;
+    right: 9.375vw;
+    top: 2.65625vw;
+    transform: skewX(40deg);
+    width: 1.5625vw;
+  }
+  .main .meal-course .meal-course-body .aplly-btn > a::after {
+    -webkit-transform: skewX(-40deg);
+    height: 2.8125vw;
+    right: 9.375vw;
+    top: 5.46875vw;
+    transform: skewX(-40deg);
+    width: 1.5625vw;
+  }
+}
+
+.footer {
+  padding: 14px 0 8px;
+  text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 9.6875vw 3.125vw 5.9375vw 0;
+  }
+}
+
+.footer .to-top-link > a {
+  -webkit-transition: .3s opacity;
+  color: #00f;
+  font-size: 12px;
+  padding-left: 14px;
+  position: relative;
+  text-decoration: underline;
+  transition: .3s opacity;
+}
+
+@media screen and (max-width: 767px) {
+  .footer .to-top-link > a {
+    font-size: 3.125vw;
+    padding-left: 3.4375vw;
+  }
+}
+
+.footer .to-top-link > a::before {
+  -webkit-box-sizing: border-box;
+  border-bottom: 4px solid #cc0033;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 4px solid transparent;
+  bottom: 7px;
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  height: 8px;
+  left: 4px;
+  position: absolute;
+  width: 6px;
+  z-index: 2;
+}
+
+@media screen and (max-width: 767px) {
+  .footer .to-top-link > a::before {
+    border-bottom: 1.40625vw solid #cc0033;
+    border-left: 1.09375vw solid transparent;
+    border-right: 1.09375vw solid transparent;
+    border-top: 1.09375vw solid transparent;
+    bottom: 1.875vw;
+    height: 1.40625vw;
+    left: 0;
+    width: 2.1875vw;
+  }
+}
+
+.footer .to-top-link > a::after {
+  background-color: #cc0033;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 4px;
+  position: absolute;
+  top: 5px;
+  width: 6px;
+  z-index: 2;
+}
+
+@media screen and (max-width: 767px) {
+  .footer .to-top-link > a::after {
+    bottom: 3.59375vw;
+    height: 0.46875vw;
+    left: 0;
+    top: auto;
+    width: 2.1875vw;
+  }
+}
+
+.footer .to-top-link > a:hover {
+  opacity: .7;
+}

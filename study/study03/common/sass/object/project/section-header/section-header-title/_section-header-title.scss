@@ -1,0 +1,29 @@
+
+.course-name {
+
+  margin-bottom: 3px;
+
+  & > a {
+
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.38;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+  }
+  
+  @include media-sp() {
+
+    margin-bottom: size(9);
+    
+    & > a {
+      font-size: size(32);
+      text-decoration: underline;
+    }
+
+  }
+
+}

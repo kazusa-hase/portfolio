@@ -1,0 +1,89 @@
+
+.congestion-calendar {
+
+  // タイトル
+  .congestion-calendar-caption {
+
+    margin-bottom: size(30);
+    font-size: size(22);
+    line-height: 1.36;
+    
+    &::before {
+      content: '\00203B';
+    }
+
+  }
+
+  // カレンダーテーブル
+  .congestion-calendar-table {
+
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+
+    tr:nth-child(odd) {
+      background-color: #f6ece6;
+    }
+
+    th, td {
+      border: size(1) #610700 solid;
+    }
+
+
+    // TH
+
+    .store-name-heading, .congestion-heading {
+      background-color: #ffb400;
+    }
+
+    .store-name-heading {
+
+      padding: size(4) 0 size(7);
+
+      & img {
+        width: auto;
+        height: size(63);
+      }
+
+    }
+
+    .congestion-heading {
+
+      padding: size(7) 0 size(6);
+
+      &>img {
+        width: auto;
+        height: size(19);
+      }
+      
+    }
+    
+    .month-heading {
+      padding: size(6) 0 size(6);
+      font-size: size(21);
+      font-weight: normal;
+    }
+
+
+    // TD
+
+    .store-name {
+      padding: size(8) 0 size(12);
+      font-size: size(22);
+    }
+
+    td { 
+
+      padding: size(9) 0 size(8);
+
+      &>img {
+        width: auto;
+        height: size(23);
+      }
+
+    }
+
+    
+  } // table
+
+} 

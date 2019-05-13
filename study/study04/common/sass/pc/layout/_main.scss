@@ -1,0 +1,14 @@
+
+.main {
+
+  @include container();
+  padding: 15px 10px 40px;
+  background: 
+    url(/portfolio/study/study04/common/img/bg-img.jpg)
+    repeat
+    left top;
+
+  // セクション要素
+  @import "../object/project/main-section/_main-section.scss";
+  
+}

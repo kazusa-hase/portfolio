@@ -1,0 +1,142 @@
+
+.section-welcome {
+
+  padding: 100px 0;
+  text-align: center;
+  
+  @include media-sp() {
+    padding: 30px 0;      
+  }
+
+
+  .section-welcome-title {
+
+    margin-bottom: 70px;
+    
+    @include media-sp() {
+      margin-bottom: 20px;
+    }
+
+  }
+
+  .section-welcome-copy {
+
+    line-height: 1.5;
+
+    @include media-sp() {
+      text-align: left;
+    }
+    
+    &:last-of-type {
+
+      margin-bottom: 70px;
+
+      @include media-sp() {
+        margin-bottom: 30px;
+      }
+
+    }
+
+  }
+
+  .sub-section-out-wrapper {
+
+    display: flex;
+
+    @include media-sp() {
+      display: block;
+    }
+    
+    
+    .sub-section {
+      
+      @include media-sp() {
+
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+  
+      }
+
+      & + section {
+
+        margin-left: 40px;
+
+        @include media-sp() {
+           margin-left: 0;
+        }
+
+      }
+
+      & > a {
+
+        display: flex;
+        flex-flow: column nowrap;
+
+        &:hover .sub-section-icon {
+
+          transform: scale(1.2);
+          background-color: $key-color-01;
+          
+          @include media-sp() {
+            transform: scale(1);
+            background-color: #333;
+          }
+
+        }
+        
+        .sub-section-icon {
+
+          $icon-length: 72px;
+          
+          order: -1;
+          align-self: center;
+          width: $icon-length;
+          height: $icon-length;
+          margin-bottom: 30px;
+          border-radius: 50%;
+          background-color: #333;
+          color: #fff;
+          font-size: 2rem;
+          line-height: $icon-length;
+          transition: .3s background-color, .3s transform;
+          
+          @include media-sp() {
+            
+            $icon-length: 144px;
+            
+            width: $icon-length;
+            height: $icon-length;
+            margin-bottom: 10px;
+            line-height: $icon-length;
+            font-size: 4rem;
+
+          }
+
+        }
+
+        .sub-section-title {
+
+          margin-bottom: 30px;
+          color: $key-color-01;
+          font-size: 2rem;
+          font-weight: 500;
+          
+          @include media-sp() {
+            margin-bottom: 10px;           
+          }
+
+        }
+
+        .sub-section-copy {
+          line-height: 1.5;
+          text-align: left;
+        }
+
+      }
+
+    }
+
+  }
+
+}

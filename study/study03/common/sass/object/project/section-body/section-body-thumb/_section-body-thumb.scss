@@ -1,0 +1,30 @@
+
+.meal-thum {
+    
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+
+  & > span {
+
+    & + span {
+      margin-left: 10px;
+    }
+
+  }
+
+  @include media-sp() {
+
+    & > span {
+
+      flex: 1 0 1px;
+
+      & + span {
+        margin-left: size(20);
+      }
+
+    }
+    
+  }
+
+}

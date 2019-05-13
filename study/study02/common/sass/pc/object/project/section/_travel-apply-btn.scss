@@ -1,0 +1,46 @@
+
+.apply-btn {
+
+  display: inline-block;
+  margin: auto auto;
+  
+  &>a {
+    
+    position: relative;
+    display: block;
+    width: 240px;
+    height: 40px;
+    background: 
+      url(/portfolio/study/study02/common/img/btn-off.jpg)
+      no-repeat
+      left top
+      /240px 40px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 44px;
+    transition: .3s opacity;
+
+    &::after {
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      display: block;
+      width: 15px;
+      height: 15px;
+      border: 7.5px solid transparent;
+      border-right: 7.5px solid #ffe073;
+      border-bottom: 7.5px solid #ffe073;
+      box-sizing: border-box;
+      content: "";
+      background-color: rgba(#fff, 0);
+    }
+
+    &:hover {
+      opacity: .7;
+    }
+
+  }
+
+}

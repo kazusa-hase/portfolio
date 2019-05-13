@@ -1,0 +1,41 @@
+
+.course-num-list {
+
+  display: flex;
+  justify-content: flex-end;
+  
+  & > dt {
+    padding: 4px 4px 0 6px;
+    background-color: $key-color-01;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  & > dd {
+    padding: 3px 6px 2px 4px;
+    border: 1px solid #{$key-color-01};
+    background-color: #fff;
+    font-size: 10px;
+    text-align: center;
+  }
+  
+  @include media-sp() {
+
+    & > dt {
+      padding: size(8) size(8) size(6) size(10);
+      font-size: size(18);
+      font-weight: normal;
+    }
+
+    & > dd {
+      padding: size(7) size(7) size(5) size(9);
+      border-width: size(1);
+      font-size: size(18);
+      font-weight: normal;
+    }
+
+  }
+
+}

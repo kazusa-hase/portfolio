@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Herb Kitchen</title>
+	<meta name="descripton" content="イタリアの家庭料理のオリジナルレシピを紹介します。">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/top.css">
+	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+
+	<header class="header">
+		<h1><span>Herb Kitchen</span></h1>
+		<p>イタリアの家庭料理のオリジナルレシピを紹介します。</p>
+	</header>
+
+	<div class="button" id="menuBtn">
+		<i class="fa fa-angle-double-down" aria-hidden="true"></i>
+	</div>
+	<!-- /.button -->
+
+	<nav class="wrap gnav" id="nav">
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="#">レシピ紹介</a></li>
+			<li><a href="#">製品紹介</a></li>
+			<li><a href="original.html">オリジナルレシピ</a></li>
+			<li><a href="#">Q &amp; A</a></li>
+		</ul>
+	</nav>
+
+	<div class="content">
+		<div class="wrap">
+
+			<section class="section original">
+				<a href="original.html">
+					<p><i class="fab fa-envira icon"></i></p>
+					<h2>オリジナルレシピ</h2>
+					<p>イタリアの一般家庭に伝わるオリジナルレレシピを集めました。</p>
+				</a>
+			</section>
+			<!-- /.original -->
+
+			<section class="section italy">
+				<a href="#">
+					<p><i class="fas fa-utensils icon"></i></p>
+					<h2>イタリア料理とは？</h2>
+					<p>オリーブオイルがポイントの独特の料理法について紹介します。</p>
+				</a>
+			</section>
+			<!-- /.italy -->
+
+			<section class="section contact">
+				<a href="#">
+					<p><i class="fas fa-envelope icon"></i></p>
+					<h2>お問合せ</h2>
+					<p>レシピについてのご希望・ご質問をお気軽にお寄せ下さい。</p>
+				</a>
+			</section>
+			<!-- /.contact -->
+
+		</div>
+		<!-- /.wrap -->
+	</div>
+	<!-- /.content -->
+
+	<div class="wrap">
+		<section class="introRecipe">
+			<h2 class="introTitle">レシピ紹介</h2>
+			<div class="recipeWrap">
+
+				<a href="#">
+					<div class="recipe recipe1">
+						<h3 class="recipeName">イタリアンサラダ</h3>
+						<img class="recipeImage" src="img/herb2.jpg" alt="イタリアパスタの画像">
+						<p class="catch">イタリアンカラーが美しいサラダは、クルミのコクと食感がアクセント。クレソンやアンディーブなどの個性ある野菜を、イタリアンドレッシングでさっぱりと。</p>
+						<p class="more">詳細を見る</p>
+					</div>
+				</a>
+
+				<a href="#">
+					<div class="recipe recipe2">
+							<h3 class="recipeName">たこのカルパッチョ</h3>
+							<img class="recipeImage" src="img/calpa.jpg" alt="たこのカルパッチョの画像">
+							<p class="catch">たこはコレステロールの上昇を抑える働きのあるタウリンが含まれます。 セロリやかいわれ菜などの香りのある野菜を上手に加えると、おいしいおつまみに。</p>
+							<p class="more">詳細を見る</p>
+					</div>
+				</a>
+
+				<a href="#">
+					<div class="recipe recipe3">
+							<h3 class="recipeName">ピザ・マルゲリータ</h3>
+							<img class="recipeImage" src="img/pizza.jpg" alt="ピザ・マルゲリータの画像">
+							<p class="catch">イタリア語で「船乗りの」を意味する名前のピザ。 マルゲリータと並ぶ非常に有名なピザ。真のナポリピッツァはマリナーラとマルゲリータしかないと言われるほど。</p>
+							<p class="more">詳細を見る</p>
+					</div>
+				</a>
+
+			</div>
+			<!-- /.recipeWrap -->
+		</section>
+		<!-- /.introRecipe -->
+	</div>
+	<!-- /.wrap -->
+
+	<div class="tenpo">
+		<h2>店舗紹介</h2>
+		<div class="map wrap">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.747975472313!2d139.74323885178526!3d35.65858048010244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1546856827522" width="960" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+		<!-- /.map -->
+	</div>
+	<!-- /.tenpo -->
+	
+	<div id="scrollBtn">Top</div>
+
+	<footer class="footer">
+		<p><small>Copyright &copy; Herbkitcten All rights reserved.</small></p>
+	</footer>
+
+
+<!--	library src
+---------------------------------------- -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<!--	script
+---------------------------------------- -->
+<script>
+	$(function() {
+		// menuの表示
+		$('#menuBtn').on('touchend', function() {
+			$('#nav').slideToggle();
+		});
+		
+		// scroll to top
+		var scrollBtn = $('#scrollBtn');
+		$(scrollBtn).hide();
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 100) {
+				scrollBtn.fadeIn();
+			} else {
+				scrollBtn.fadeOut();
+			}
+		});
+		$(scrollBtn).on('touchend', function() {
+			$('html, body').animate({
+				scrollTop: 0
+			}, 500);
+		});
+		
+	});
+</script>
+
+
+
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+/*reset*/
+/*----------------------------------------------------*/
+
+html, body, h1, h2, h3, p, ul, ol, li, dl, dt, dd {
+/*    外側の余白*/
+    margin: 0;
+/*    内側の余白*/
+    padding: 0;
+/*    使用するフォント*/
+    font-family: "游ゴシック", YuGothic, "Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
+/*    フォントの太さ*/
+    font-weight: 500;
+/*    行の高さ*/
+    line-height: 1.0;
+}
+
+ul {
+/*    中黒を取る*/
+    list-style: none;
+}
+
+a {
+/*    下線を取る*/
+    text-decoration: none;
+}
+
+img {
+/*    縦位置をbottomに揃える*/
+    vertical-align: bottom;
+/*    リンクになった時の下線を取る*/
+    border: none;
+}
+
+
+/*css*/
+/*----------------------------------------------------*/
+
+
+/*共通項*/
+
+h2 {
+/*    背景画像*/
+    background: url(../img/herb.jpg) no-repeat left center;
+/*    高さ*/
+    height: 30px;
+/*    行の高さ*/
+    line-height: 30px;
+/*    外側の余白*/
+    margin-bottom: 10px;
+/*    内側の余白*/
+    padding-left: 40px;
+/*    フォントカラー*/
+    color: #037408;
+/*    フォントの太さ*/
+    font-weight: bold;
+}
+
+h3 {
+/*    外側の余白*/
+    margin-bottom: 10px;
+/*    内側の余白*/
+    padding: 5px;
+/*    背景色*/
+    background: #037408;
+/*    フォントカラー*/
+    color: #fff;
+/*    フォントの太さ*/
+    font-weight: bold;
+}
+
+img {
+/*	float処理*/
+	float: left;
+/*	外側の余白*/
+	margin: 0px 20px 30px 0px
+}
+
+ol, h3 {
+/*	clear対象の要素*/
+	clear: left;
+}
+
+/*.container*/
+
+.container {
+/*    横幅*/
+    width: 960px;
+/*    外側の余白*/
+    margin: 0 auto;
+}
+
+
+/*body*/
+body {
+	background: url(../img/herb3.jpg) repeat-x center top;
+}
+
+
+/*header*/
+
+header {
+/*    外側の余白*/
+    margin-bottom: 20px;
+/*    高さ*/
+    height: 200px;
+/*    フォントカラー*/
+    color: #fff;
+/*    テキストの横位置の揃え*/
+    text-align: center;
+	
+	box-sizing: border-box;
+}
+
+header h1 {
+/*    内側の余白*/
+    padding: 30px 0 30px 0;
+/*フォントの大きさ*/
+    font-size: 500%;
+/*	フォントファミリー*/
+	 font-family: 'Berkshire Swash', cursive;
+/*    フォントの太さ*/
+    font-weight: lighter;
+/*    テキストの間隔*/
+    letter-spacing: 10px;
+}
+
+header p {
+/*    内側の余白*/
+    padding-right: 20px;
+/*    フォントのサイズ*/
+    font-size: 20px;
+/*    フォントの太さ*/
+    font-weight: bold;
+}
+
+
+/*navigation*/
+
+nav ul {
+/*    外側の余白*/
+    margin-bottom: 30px;   
+/*	overflow*/
+	overflow: hidden;
+}
+
+nav li { /*  <li>は文字に関することを*/
+/*    高さ*/
+    height: 44px;
+/*    行の高さ*/
+    line-height: 44px; 
+/*	横の長さ*/
+	width: 192px;
+/*	float*/
+	float: left;
+}
+
+h2 {
+/*	clear*/
+	clear: both;
+}
+
+nav a { /*	 <a>はリンクに関することを*/
+/*    ブロック化*/
+    display: block;
+/*	内側の余白*/
+	padding-top: 1px;
+/*    背景色*/
+    background: #037408;
+/*    フォントカラー*/
+    color: #fff;
+/*	テキストを中央揃え*/
+	text-align: center;
+/*    ボーダー*/
+    border-right: 1px solid #fff;
+	box-sizing: border-box;
+}
+
+nav .ulList4 a {
+	/*    背景色*/
+    background: #f85605;
+}
+
+nav li:last-child a {
+/*    ボーダーを取り除く*/
+    border-right: none;
+}
+
+nav a:hover {
+/*    背景色*/
+    background: #f85605;
+/*    フォントカラー*/
+    color: #dfd;
+}
+
+
+/*.carpaccio*/
+
+.carpaccio {
+/*    外側の余白*/
+    margin-bottom: 50px;
+}
+
+.carpaccio p {
+/*    外側の余白*/
+    margin-bottom: 20px;
+/*    行の高さ*/
+    line-height: 1.5;
+}
+
+.carpaccio ol {
+/*    内側の余白*/
+    padding: 20px 40px;
+/*    背景色*/
+    background: #dfd;
+/*    ボーダー*/
+    border: 2px solid #037408;
+}
+
+.carpaccio li {
+/*    外側の余白*/
+    margin-bottom: 20px;
+}
+
+.carpaccio li:last-child {
+/*	外側の余白を0にする*/
+	margin-bottom: 0;
+}
+
+
+/*.peperoncino*/
+
+.peperoncino {
+/*    外側の余白*/
+    margin-bottom: 50px;
+}
+
+.peperoncino p {
+/*    行の高さ*/
+    line-height: 1.5;
+}
+
+
+/*.glossary*/
+
+.glossary dl {
+/*    外側の余白*/
+    margin-bottom: 50px;
+/*    内側の余白*/
+    padding: 20px 20px 10px;
+/*    背景色*/
+    background: #dfd;
+/*    ボーダー*/
+    border: 2px solid #037408;
+}
+
+.glossary dt {
+/*	外側の余白*/
+	padding-bottom: 5px;
+}
+
+.glossary dd {
+/*    内側の余白*/
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+
+/*footer*/
+
+footer p {
+/*    内側の余白*/
+    padding: 20px;
+/*    テキストを中央揃え*/
+    text-align: center;
+/*    ボーダー*/
+    border-top: 2px solid #aaa;
+}
+
+
+
+
+

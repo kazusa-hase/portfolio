@@ -1,0 +1,240 @@
+@charset "utf-8";
+
+/*reset
+-------------------------------------------*/
+html, body, h1, p, ul, li {
+	margin: 0;
+	padding: 0;
+	font-family: 
+		"游ゴシック", YuGothic, 
+		"Hiragino Kaku Gothic Pro", 
+		Meiryo, 
+		sans-serif;
+	font-weight: 500;
+	line-height: 1.0;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+	vertical-align: bottom;
+	border: none;
+}
+
+/*base
+-------------------------------------------*/
+.container {
+	background: #fff;
+	text-align: center;
+}
+
+/*header
+-------------------------------------------*/
+header {
+	background: #fcc;
+	margin-bottom: 30px;
+	padding: 20px;
+}
+header h1 {
+	width: 290px;
+	height: 50px;
+	margin: 0 auto 10px;
+	padding-left: 50px;
+	background: 
+		url(../img/flower-icon.png)
+		no-repeat 
+		left center;
+	color: #900;
+	font-weight: lighter;
+	line-height: 50px;
+}
+
+/*hamburger-menu*/
+.btn {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #999;
+	border-radius: 5px;
+	background: #fff;
+	transition: transform 0.3s;
+}
+.btn>span {
+	display: block;
+	width: 35px;
+	height: 3px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 24px auto 0;
+	border-radius: 5px;
+	background: #999;
+	transition: transform 0.3s;
+}
+.btn>span::before, .btn>span::after {
+	display: block;
+	content: "";
+	width: 35px;
+	height: 3px;
+	margin-top: -10px;
+	border-radius: 5px;
+	background: #999;
+	transition: transform 0.3s;
+}
+.btn>span::after {
+	content: "";
+	margin-top: 17px;
+	color: #999;
+	font-weight: bold;
+	line-height: 2.4;
+}
+
+.close>span {
+	background: transparent;
+}
+
+.close>span::before {
+	margin-top: 0;
+	transform: rotate(225deg);
+}
+
+.close>span::after {
+	content: "";
+	margin-top: -3px;
+	transform: rotate(-225deg);
+}
+
+/*navigation*/
+nav {
+	display: none;
+}
+nav ul {
+	max-width: 960px;
+	margin: 0 auto 30px;
+	overflow: hidden;
+}
+nav li {
+	width: 19.2%;
+	float: left;
+	margin-right: 1%;
+}
+nav li:last-child {
+	margin-right: 0;
+}
+nav a {
+	display: block;
+	height: 44px;
+	border: 1px solid #aaa;
+	box-sizing: border-box;
+	background: 
+		url(../img/navBg.jpg) 
+		repeat-x
+		left top;
+	color: #999;
+	line-height: 44px;
+}
+nav a:hover {
+	background-position: left bottom;
+	color: #900;
+}
+
+/*main
+-----------------------------------------------*/
+.mainImage {
+  margin-bottom: 50px;
+}
+
+/*footer
+-----------------------------------------------*/
+footer {
+	padding: 30px;
+	background: #fcc;
+}
+
+
+
+
+
+/*media query
+-----------------------------------------------*/
+@media screen and (max-width: 767px) {
+/*	header*/
+	header {
+		margin-bottom: 10px;
+		padding: 10px;
+	}
+	header h1 {
+		width: 300px;
+		padding-left: 16px;
+		font-size: 28px
+	}
+	header p {
+		font-size: 12px;
+	}
+	
+/*	nav*/
+	nav {
+		display: none;
+		position: absolute;
+		top: 60px;
+		width: 100%;
+	}
+	nav ul {
+		overflow: visible;
+		margin-bottom: 0;
+	}
+	nav li {
+		float: none;
+		width: 100%;
+	}
+	nav a {
+		border: none;
+		font-weight: bolder;
+		opacity: 0.9;
+	}
+	
+/*	main*/
+	.mainImage {
+		margin-bottom: 0;
+		padding: 5px 0 10px;
+	}
+	
+/*	footer*/
+	footer {
+		padding: 15px;
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 374px) {
+/*	header*/
+	header h1 {
+		width: 260px;
+		padding-left: 16px;
+		font-size: 22px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
